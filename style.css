@@ -57,9 +57,10 @@
     left:0;
     right: 0;
 }
+
 .work-double-row{
-    padding-left:120px;
-    padding-right: 120px;
+    padding-left:60px;
+    padding-right: 60px;
     margin-top: 80px;
 }
 .project-star {
@@ -708,8 +709,8 @@ li span:hover:after {
         display: none;
     }
     .work-double-row{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     #index-body {
 /*         background: url('assets/img/mobile.png'); */
@@ -943,8 +944,8 @@ li span:hover:after {
     right: 0;
 }
 .work-double-row{
-    padding-left:120px;
-    padding-right: 120px;
+    padding-left:60px;
+    padding-right: 60px;
     margin-top: 80px;
 }
 .project-star {
@@ -1593,8 +1594,8 @@ li span:hover:after {
         display: none;
     }
     .work-double-row{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     #index-body {
 /*         background: url('assets/img/mobile.png'); */
@@ -1624,7 +1625,7 @@ li span:hover:after {
         display: none;
     }
     .work-double-row{
-        padding:30px 20px;
+        padding:15px 10px;
         padding-bottom: 0;
     }
     .work-hero-card{
@@ -1828,8 +1829,8 @@ li span:hover:after {
     right: 0;
 }
 .work-double-row{
-    padding-left:120px;
-    padding-right: 120px;
+    padding-left:60px;
+    padding-right: 60px;
     margin-top: 80px;
 }
 .project-star {
@@ -2478,8 +2479,8 @@ li span:hover:after {
         display: none;
     }
     .work-double-row{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     #index-body {
 /*         background: url('assets/img/mobile.png'); */
@@ -2509,7 +2510,7 @@ li span:hover:after {
         display: none;
     }
     .work-double-row{
-        padding:30px 20px;
+        padding:15px 10px;
         padding-bottom: 0;
     }
     .work-hero-card{
@@ -2713,8 +2714,8 @@ li span:hover:after {
     right: 0;
 }
 .work-double-row{
-    padding-left:120px;
-    padding-right: 120px;
+    padding-left:60px;
+    padding-right: 60px;
     margin-top: 80px;
 }
 .project-star {
@@ -3402,7 +3403,7 @@ li span:hover:after {
         display: none;
     }
     .work-double-row{
-        padding:30px 20px;
+        padding:15px 10px;
         padding-bottom: 0;
     }
     .work-hero-card{
