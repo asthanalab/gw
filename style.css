@@ -170,13 +170,75 @@
     color: white !important;
     border: 2px solid #444 !important;
 }
-
-body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--light-text-color);
-    overflow-x: hidden;
+.work-read:hover {
+    background: #444;
+    color: white !important;
+    border: 2px solid #444 !important;
 }
 
+.fade-in-image {
+    opacity: 0;
+    animation: fadeIn 1.0s forwards;
+    border-radius: 15px; /* Rounded corners */
+    width: 150px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s; /* Delay to ensure text fades in after the image */
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style for the horizontal line */
+.custom-hr {
+    border: 0;
+    height: 2px;
+    background: #333; /* Change color as needed */
+    margin-top: 20px; /* Add space above the line */
+    margin-bottom: 20px; /* Add space below the line */
+}
+
+/* Styles for two images side by side */
+.two-images-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.two-images-container .image-item {
+    width: 40%; /* Each image takes up 40% of the container's width */
+}
+
+.two-images-container .image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .comingsoon h1 {
     font-size: 3em;
 }
@@ -1149,6 +1211,26 @@ li span a:hover {
     font-size: 25px;
     font-family: 'CircularStd';
     /* letter-spacing: 0.1rem; */
+}
+
+#group24 {
+    width: 50% !important; /* Ensure the group24 image is 50% width */
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    margin-bottom: 20px !important; /* Add space below the group24 image */
+}
+
+.responsive-image {
+    width: 100% !important;
+    max-width: 50% !important; /* Ensure the images are at most half the width of the group24 image */
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 600px) {
+    .responsive-image {
+        max-width: 100% !important;
+    }
 }
 
 .legal-des {
