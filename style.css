@@ -180,9 +180,15 @@
     opacity: 0;
     animation: fadeIn 1.0s forwards;
     border-radius: 15px; /* Rounded corners */
-    width: 150px; /* Fixed width */
-    height: 100px; /* Fixed height */
+    width: 100%; /* Flexible width */
+    height: auto;
     object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+/* Media query for very small windows */
+@media (max-width: 600px) {
+    .fade-in-image {
+        width: 60%; /* Minimum width of 60% of the screen */
+    }
 }
 .fade-in-text {
     opacity: 0;
@@ -518,12 +524,14 @@ li span a:hover {
 
 
 .hero-tag {
-    margin-top: 20vh;
-    text-align: left;
-    font-size: 4.5em;
-    font-weight: bold;
-    color: var(--hero-color);
-    font-family: 'CircularStd', sans-serif;
+    margin-left: 0; /* Align the heading with the container */
+    padding-left: 0; /* Remove any additional padding */
+}
+.row {
+    width: 90%; /* Ensure the row width is consistent */
+    margin: 0 auto; /* Center the row */
+    height: auto;
+    animation-duration: 1.5s;
 }
 
 .contact-hero {
