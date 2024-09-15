@@ -522,10 +522,10 @@ li span a:hover {
     right: 25px;
 }
 
-.image.headshot {
+.imageheadshot {
     width: 200px; /* Set a fixed width */
     height: 200px; /* Set a fixed height */
-    object-fit: scale-down; /* Ensure the image covers the area without distortion */
+    object-fit: contain; /* Ensure the image covers the area without distortion */
     border-radius: 50%; /* Optional: Make the images circular */
 }
 .hero-tag {
