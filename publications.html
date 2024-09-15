@@ -25,18 +25,31 @@
     <title>publications:asthana group</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <style>
+        .publications-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 20px;
+        }
         .publication-box {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-            margin-bottom: 20px; /* Add margin to separate boxes vertically */
-            display: block; /* Ensure each box is displayed as a block element */
-            width: 100%; /* Set a fixed width for all publication boxes */
-            max-width: 800px; /* Set a maximum width for the publication boxes */
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #ccc;
+                padding: 20px;
+                margin: 10px 0;
+                background-color: #f9f9f9;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s, box-shadow 0.3s;
+                text-decoration: none;
+                color: inherit;
+                width: 80%;
+                max-width: 1400px;
+                box-sizing: border-box;
+                margin-left: auto; /* Center align the publication box */
+                margin-right: auto; /* Center align the publication box */
         }
 
         .publication-box:hover {
@@ -81,21 +94,16 @@
 
             </center>
         </nav>
-
-        <div class="container-heading">
-            <h1 class="hero-tag contact-hero fadeInLeft">Preprints</h1><hr>
         </div>
-        <div class="fadeIn row" style="width:90%;height:auto;animation-duration: 1.5s;" id="left-hero">
+        <div class="publications-container">
+            <h2>Preprints</h2>
+        <div  style="width:90%;height:auto;animation-duration: 1.5s;" id="left-hero">
             <!-- Add preprints here if any -->
         </div>
-        <div class=" fadeIn row" style="width:90%;height:auto;animation-duration: 1.5s;" id="left-hero">
-            </div>
-            <div class=" container-heading">
-              <h1 class="hero-tag contact-hero  fadeInLeft">Published</h1><hr>
-            </div>
-            <div class="fadeIn row" style="width:90%;height:auto;animation-duration: 1.5s;" id="left-hero">
-                <div class="publication-box">
-                    <a href="https://pubs.aip.org/aip/jcp/article/159/24/244113/2931602" target="_blank">
+        <h2>Publications</h2>
+        <div class="fadeIn row" style="width:90%;height:auto;animation-duration: 1.5s;" id="left-hero">
+            <div class="publication-box">
+                <a href="https://pubs.aip.org/aip/jcp/article/159/24/244113/2931602" target="_blank">
                         <p>2023: <u>Analytic gradients for spinor-based relativistic exact-two-component equation-of-motion coupled-cluster singles and doubles method</u></p>
                         <p>Chaoqun Zhang, Xuechen Zheng, Junzi Liu, Ayush Asthana, and Lan Cheng, J. Chem. Phys., <b>159</b>, 244113, 2023</p>
                     </a>
@@ -109,9 +117,7 @@
                     </a>
                 </div>
             </div>
-            <div class=" container-heading">
-                <h1 class="hero-tag contact-hero  fadeInLeft">Published before University of North Dakota</h1><hr>
-            </div>
+            <h2>Published before UND </h2>
             <div class=" fadeIn row" style="width:90%;height:auto;animation-duration: 1.5s;" id="left-hero">
                     <br><div class="publication-box">
                         <a href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.19.064071" target="_blank">
@@ -204,7 +210,7 @@
                     <a target="_blank" href="https://github.com/asthanalab"><i class="fab fa-github"></i></a>
                     <a target="_blank" href="https://twitter.com/ayushasthana92"><i class="fab fa-twitter"></i></a>
 		</div>
-            </div>
+        </div>
         </div>
         <div class="menu-wrap">
             <input type="checkbox" class="toggler">
