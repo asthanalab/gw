@@ -530,11 +530,11 @@ li span a:hover {
 }
 /* Add vendor prefixes for better compatibility */
 .image-headshot {
-    -webkit-transform: scale(1.2); /* Safari and Chrome */
-    -moz-transform: scale(1.2); /* Firefox */
-    -ms-transform: scale(1.2); /* IE 9 */
-    -o-transform: scale(1.2); /* Opera */
-    transform: scale(1.2); /* Standard */
+    -webkit-transform: scale(1.0); /* Safari and Chrome */
+    -moz-transform: scale(1.0); /* Firefox */
+    -ms-transform: scale(1.0); /* IE 9 */
+    -o-transform: scale(1.0); /* Opera */
+    transform: scale(1.0); /* Standard */
 }
 .hero-tag {
     margin-left: 0; /* Align the heading with the container */
