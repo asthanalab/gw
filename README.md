@@ -1,6 +1,5 @@
-Group website of Asthana group at University of North Dakota, Department of
+Group website of Asthana group at the University of North Dakota, Department of
 Chemistry.
 
-##### Made by <a href="https://github.com/ishandeveloper">ishandeveloper</a>
+##### Website template made by <a href="https://github.com/ishandeveloper">ishandeveloper</a>
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/ishandeveloper)
