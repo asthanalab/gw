@@ -32,45 +32,73 @@
             text-align: center;
             padding-top: 20px;
         }
+
         .publication-box {
             display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid #ccc;
-                padding: 20px;
-                margin: 10px 0;
-                background-color: #f9f9f9;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s, box-shadow 0.3s;
-                text-decoration: none;
-                color: inherit;
-                width: 80%;
-                max-width: 1400px;
-                box-sizing: border-box;
-                margin-left: auto; /* Center align the publication box */
-                margin-right: auto; /* Center align the publication box */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #e2e2e2;
+            padding: 18px 22px;
+            margin: 10px 0;
+            background-color: #ffffff;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+            border-radius: 14px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            width: 80%;
+            max-width: 1100px;
+            box-sizing: border-box;
+            margin-left: auto; /* Center align the publication box */
+            margin-right: auto; /* Center align the publication box */
         }
 
         .publication-box:hover {
-            transform: scale(1.02);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.10);
+            border-color: #c5d5ff;
         }
 
         .publication-box a {
             text-decoration: none;
             color: inherit;
             display: block;
+            width: 100%;
         }
 
         .publication-box p {
-            width: 80%;
-            max-width: 800px;
+            width: 100%;
+            max-width: none;
+            margin-bottom: 6px;
         }
+
+        .publication-box p:first-child {
+            font-weight: 600;
+        }
+
+        .publication-box p:nth-child(2) {
+            color: #555;
+        }
+
+        .publication-box p:last-child {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 0;
+        }
+
         .container-heading {
             width: 90%;
             height: auto;
             animation-duration: 1.5s;
             margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .publication-box {
+                padding: 14px 16px;
+                width: 95%;
+            }
         }
     </style>
 </head>
