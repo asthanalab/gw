@@ -293,6 +293,81 @@ body {
     height: auto;
     display: block;
 }
+.lab-principles {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 28px 32px 24px 32px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    border: 1px solid #e4e4e4;
+}
+
+.lab-principles h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 18px;
+}
+
+.lab-principles ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lab-principles li {
+    position: relative;
+    padding: 14px 0 4px 28px;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.lab-principles li::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4c8dff;
+}
+
+.lab-principles li + li {
+    border-top: 1px solid #f0f0f0;
+    margin-top: 10px;
+}
+
+.lab-principles b {
+    text-transform: none;
+    font-weight: 600;
+    color: #222;
+}
+
+.lab-principles p {
+    margin: 0;
+}
+
+@media (max-width: 767.98px){
+    .lab-principles {
+        margin: 28px 16px;
+        padding: 22px 18px 18px 18px;
+    }
+
+    .lab-principles h2 {
+        font-size: 1.5rem;
+    }
+
+    .lab-principles li {
+        padding-left: 26px;
+        font-size: 0.95rem;
+    }
+}
+
 .comingsoon h1 {
     font-size: 3em;
 }
