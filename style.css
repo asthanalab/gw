@@ -1901,15 +1901,16 @@ li span:hover:after {
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .people-page .person-card::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 6px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     background: rgba(31,79,216,0.22);
