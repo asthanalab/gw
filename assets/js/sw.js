@@ -1,9 +1,10 @@
-const staticCacheName = 'site-static-v2';
+const staticCacheName = 'site-static-v3';
 const assets = [
     './',
     './index.html',
     './research.html',
     './publications.html',
+    './software.html',
     './people.html',
     './culture.html',
     './news.html',
