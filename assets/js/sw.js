@@ -1,7 +1,8 @@
-const staticCacheName = 'site-static-v3';
+const staticCacheName = 'site-static-v8';
 const assets = [
     './',
     './index.html',
+    './manifest.json',
     './research.html',
     './publications.html',
     './software.html',
@@ -12,8 +13,12 @@ const assets = [
     './legal.html',
     './404.html',
     './style.css',
-    './assets/img/mobile.png',
-    './assets/img/favicon.png',
+    './pages.css',
+    './assets/img/logoUND.jpeg',
+    './assets/img/publications/chemically-decisive-benchmarks.png',
+    './assets/img/publications/generalized-eigenvalue.jpeg',
+    './assets/img/publications/quantum-krylov.png',
+    './assets/img/publications/qseom-ga.gif',
     'https://fonts.googleapis.com/css?family=Lato:300,400,700'
 ];
 // install event
