@@ -966,6 +966,54 @@ body.site-shell a:hover {
         padding: 18px 18px 20px;
     }
 
+    .menu-wrap {
+        top: max(16px, env(safe-area-inset-top));
+        right: 16px;
+        bottom: auto;
+        z-index: 120;
+    }
+
+    .menu-wrap .toggler,
+    .menu-wrap .hamburger {
+        top: 0;
+        bottom: auto;
+    }
+
+    .menu-wrap .menu {
+        z-index: 119;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .menu-wrap .menu > div {
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        border-radius: 0;
+        padding: 88px 24px 36px;
+        justify-content: center;
+    }
+
+    .menu-wrap .menu > div > div {
+        width: min(100%, 360px);
+        max-width: 360px;
+        max-height: calc(100vh - 124px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .menu-wrap .menu > div > div > ul {
+        display: grid;
+        gap: 12px;
+        padding-bottom: 20px;
+    }
+
+    .menu-wrap .menu > div > div > ul > li > a {
+        display: block;
+        padding: 8px 0;
+        font-size: 1.05rem;
+    }
+
     .site-page .person-card {
         flex-direction: column;
     }
