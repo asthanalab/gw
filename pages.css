@@ -989,7 +989,7 @@ body.site-shell a:hover {
         z-index: 119;
         display: flex !important;
         align-items: center !important;
-        justify-content: center !important;
+        justify-content: flex-end !important;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
@@ -1001,7 +1001,7 @@ body.site-shell a:hover {
         min-height: 100vh;
         border-radius: 0;
         padding: 88px 24px 36px;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .menu-wrap .menu > div > div {
@@ -1009,22 +1009,22 @@ body.site-shell a:hover {
         width: min(100%, 360px);
         max-width: 360px;
         max-height: calc(100vh - 124px);
-        margin: 0 auto;
+        margin: 0 0 0 auto;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
-        text-align: center !important;
+        text-align: right !important;
     }
 
     .menu-wrap .menu > div > div > ul {
         display: grid;
         gap: 12px;
         padding-bottom: 20px;
-        justify-items: center;
+        justify-items: end;
     }
 
     .menu-wrap .menu > div > div > ul > li {
         width: 100%;
-        text-align: center;
+        text-align: right;
     }
 
     .menu-wrap .menu > div > div > ul > li > a {
@@ -1032,7 +1032,7 @@ body.site-shell a:hover {
         width: 100%;
         padding: 8px 0;
         font-size: 1.05rem;
-        text-align: center;
+        text-align: right;
     }
 
     .site-page .person-card {
