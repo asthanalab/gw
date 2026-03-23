@@ -967,16 +967,22 @@ body.site-shell a:hover {
     }
 
     .menu-wrap {
-        top: max(16px, env(safe-area-inset-top));
-        right: 16px;
-        bottom: auto;
-        z-index: 120;
+        position: fixed !important;
+        top: max(16px, env(safe-area-inset-top)) !important;
+        right: 16px !important;
+        bottom: auto !important;
+        left: auto !important;
+        z-index: 120 !important;
+        display: block !important;
     }
 
     .menu-wrap .toggler,
     .menu-wrap .hamburger {
-        top: 0;
-        bottom: auto;
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: auto !important;
+        left: auto !important;
     }
 
     .menu-wrap .menu {
