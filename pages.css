@@ -987,11 +987,15 @@ body.site-shell a:hover {
 
     .menu-wrap .menu {
         z-index: 119;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
 
     .menu-wrap .menu > div {
+        box-sizing: border-box;
         width: 100vw;
         height: 100vh;
         min-height: 100vh;
@@ -1001,23 +1005,34 @@ body.site-shell a:hover {
     }
 
     .menu-wrap .menu > div > div {
+        box-sizing: border-box;
         width: min(100%, 360px);
         max-width: 360px;
         max-height: calc(100vh - 124px);
+        margin: 0 auto;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
+        text-align: center !important;
     }
 
     .menu-wrap .menu > div > div > ul {
         display: grid;
         gap: 12px;
         padding-bottom: 20px;
+        justify-items: center;
+    }
+
+    .menu-wrap .menu > div > div > ul > li {
+        width: 100%;
+        text-align: center;
     }
 
     .menu-wrap .menu > div > div > ul > li > a {
         display: block;
+        width: 100%;
         padding: 8px 0;
         font-size: 1.05rem;
+        text-align: center;
     }
 
     .site-page .person-card {
