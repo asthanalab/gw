@@ -743,22 +743,6 @@ body.site-shell a:hover {
     padding: 18px 18px 20px;
 }
 
-.site-page .publication-feature-kicker {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
-    margin: 0;
-    padding: 6px 10px;
-    border-radius: 999px;
-    background: #eef2f7;
-    border: 1px solid #dde5ef;
-    font-size: 0.76rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #49596f;
-}
-
 .site-page .publication-feature-title {
     margin: 0;
     font-family: "CircularStd", sans-serif;
