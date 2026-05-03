@@ -15,8 +15,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
     <meta name="description"
-        content="Research directions in the Asthana Group spanning quantum chemistry, quantum computing, materials simulation, and scientific software.">
+        content="Research in the Asthana Group: chemically decisive benchmarks, quantum Krylov algorithms, excited-state quantum chemistry, materials simulation, and open source software.">
+    <meta property="og:title" content="Research | Asthana Group">
+    <meta property="og:description"
+        content="Three questions drive the Asthana Group: what chemistry should quantum computers solve, how should ground states be solved, and how should excited states be solved on noisy hardware?">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://theasthanagroup.com/research.html">
+    <meta property="og:image" content="https://theasthanagroup.com/assets/img/publications/chemically-decisive-benchmarks.png">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Research | Asthana Group</title>
+    <link rel="canonical" href="https://theasthanagroup.com/research.html">
     <link rel="icon" type="image/jpeg" href="assets/img/logoUND.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -25,6 +33,7 @@
     <link rel="stylesheet" href="research.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="assets/js/app.js"></script>
 </head>
 
 <body class="site-shell">
@@ -33,12 +42,11 @@
             <ul class="site-nav-list">
                 <li><a class="nav-link" href="index.html">home</a></li>
                 <li><a class="nav-link" href="research.html" aria-current="page">research</a></li>
-                <li><a class="nav-link" href="publications.html">publications</a></li>
-                <li><a class="nav-link" href="software.html">software</a></li>
+                <li><a class="nav-link" href="outputs.html">outputs</a></li>
                 <li><a class="nav-link" href="people.html">people</a></li>
                 <li><a class="nav-link" href="culture.html">culture</a></li>
                 <li><a class="nav-link" href="news.html">news</a></li>
-                <li><a class="nav-link" href="opportunities.html">opportunities</a></li>
+                <li><a class="nav-link" href="join.html">join</a></li>
             </ul>
         </div>
     </nav>
@@ -46,240 +54,186 @@
     <main class="research-page site-page content">
         <div class="container research-container page-container">
             <header class="research-header page-header">
-                <p class="research-eyebrow page-eyebrow">Research Directions</p>
-                <h1 class="research-title page-title">Research</h1>
+                <p class="research-eyebrow page-eyebrow">Research</p>
+                <h1 class="research-title page-title">Problems to solve</h1>
                 <p class="research-subtitle page-subtitle">
-                    Quantum algorithms, excited-state and relativistic theory, materials simulation, and software
-                    infrastructure for chemistry.
+                    Our group asks questions dealing with chemical and materials problems that are important enough to
+                    make real-world impact and hard enough to require rigorous science, new technological innovation,
+                    and new analytical innovation. We love a good challenge!
                 </p>
             </header>
 
-            <div class="research-layout">
-                <nav class="research-subnav" aria-label="Research areas">
-                    <div class="research-subnav-card">
-                        <p class="research-subnav-label">On this page</p>
-                        <p class="research-subnav-summary">
-                            Four connected directions define the group&rsquo;s research program, from quantum
-                            algorithms for molecules to materials simulation and software development.
+            <section class="research-problem-grid" id="problems-to-solve" aria-label="Problems to solve">
+                <article class="research-problem-card page-card">
+                    <figure class="research-problem-media research-problem-media--contain">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/FeMoco_cluster.svg/960px-FeMoco_cluster.svg.png"
+                            alt="Structure of the FeMo cofactor in nitrogenase" loading="lazy" decoding="async">
+                    </figure>
+                    <div class="research-problem-body">
+                        <span class="page-tag">Problem 01</span>
+                        <h2>Strongly correlated ground states in metalloclusters</h2>
+                        <p>
+                            Strongly correlated systems such as FeMoco challenge quantum-chemistry methods. These
+                            systems involve high-rank excitations and require accurate control of large Hilbert spaces
+                            to reach chemically meaningful energy scales. We develop quantum and classical algorithms
+                            that target to solve these problems.
                         </p>
-                        <a class="research-subnav-link" href="#quantum-chemistry">
-                            <img class="research-subnav-thumb" src="assets/img/1.png" alt="" aria-hidden="true">
-                            <span class="research-subnav-content">
-                                <span class="research-subnav-index">01</span>
-                                <span class="research-subnav-title">Quantum Chemistry on Quantum Computers</span>
-                            </span>
-                        </a>
-                        <a class="research-subnav-link" href="#relativistic-excited-states">
-                            <img class="research-subnav-thumb" src="assets/img/theme1.png" alt="" aria-hidden="true">
-                            <span class="research-subnav-content">
-                                <span class="research-subnav-index">02</span>
-                                <span class="research-subnav-title">Relativistic, Excited States, and Challenging
-                                    Electronic Structure</span>
-                            </span>
-                        </a>
-                        <a class="research-subnav-link" href="#materials-simulation">
-                            <img class="research-subnav-thumb" src="assets/img/theme3.png" alt="" aria-hidden="true">
-                            <span class="research-subnav-content">
-                                <span class="research-subnav-index">03</span>
-                                <span class="research-subnav-title">Materials Simulation Using Tools from Quantum
-                                    Chemistry</span>
-                            </span>
-                        </a>
-                        <a class="research-subnav-link" href="#software">
-                            <img class="research-subnav-thumb" src="assets/img/4.png" alt="" aria-hidden="true">
-                            <span class="research-subnav-content">
-                                <span class="research-subnav-index">04</span>
-                                <span class="research-subnav-title">Software for Quantum Computing and Quantum
-                                    Chemistry</span>
-                            </span>
-                        </a>
+                        <p class="research-problem-credit">
+                            Image: <a href="https://commons.wikimedia.org/wiki/File:FeMoco_cluster.svg"
+                                target="_blank" rel="noopener">Smokefoot, Wikimedia Commons</a>, public domain.
+                        </p>
                     </div>
-                </nav>
+                </article>
 
-                <section class="research-sections" aria-label="Research details">
-                    <article class="research-section-card" id="quantum-chemistry">
-                        <div class="research-section-body">
-                            <p class="research-section-number">01</p>
-                            <h2 class="research-section-title">Quantum Chemistry on Quantum Computers</h2>
-                            <p class="research-section-text">
-                                The Asthana Group develops quantum and quantum-classical methods for
-                                electronic-structure simulation, with an emphasis on turning quantum computing into a
-                                practical tool for chemically meaningful problems. Our work spans ground states,
-                                excited states, response properties, and robust subspace formulations, with a
-                                particular focus on methods that combine chemical rigor, numerical stability, and
-                                relevance to emerging hardware. We are especially interested in identifying the regimes
-                                where quantum algorithms can move beyond proof-of-principle demonstrations and toward
-                                genuine quantum utility for chemistry.
+                <article class="research-problem-card page-card">
+                    <figure class="research-problem-media research-problem-media--white research-problem-media--contain">
+                        <img src="assets/img/research-photoisomerism-martinez-no-title.png"
+                            alt="Photoisomerism on excited-state potential energy surfaces" loading="lazy"
+                            decoding="async">
+                    </figure>
+                    <div class="research-problem-body">
+                        <span class="page-tag">Problem 02</span>
+                        <h2>Excited-state quantum chemistry</h2>
+                        <p>
+                            Spectroscopy and excited-state dynamics demand highly accurate excited states, but widely
+                            used excited-state methods often struggle on challenging excited-state potential-energy
+                            surfaces, especially when molecules have strong multireference character or in conical
+                            intersection problems. We develop general, black-box-style excited-state methods for
+                            classical and quantum computers.
+                        </p>
+                        <p class="research-problem-credit">
+                            Image: <a
+                                href="https://mtzweb.stanford.edu/research/research/research/research/research/research/research/research/research/research-2"
+                                target="_blank" rel="noopener">The Mart&iacute;nez Group, Stanford University, Excited States
+                                Dynamics</a>.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="research-problem-card page-card">
+                    <figure class="research-problem-media research-problem-media--contain">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220825180257/Shapeofforbital.jpg"
+                            alt="Shapes of f orbitals relevant to heavy-element chemistry" loading="lazy"
+                            decoding="async">
+                    </figure>
+                    <div class="research-problem-body">
+                        <span class="page-tag">Problem 03</span>
+                        <h2>Heavy-element quantum chemistry</h2>
+                        <p>
+                            Actinides and other heavy-element compounds require simultaneous treatment of relativity,
+                            spin-orbit effects, strong correlation, and chemically subtle bonding characteristics.
+                            These are demanding targets for both classical and quantum computers. We aim to resolve the
+                            f-electron problem using long-standing chemical insight and new technology.
+                        </p>
+                        <p class="research-problem-credit">
+                            Image: <a href="https://www.geeksforgeeks.org/chemistry/shapes-of-atomic-orbitals/"
+                                target="_blank" rel="noopener">GeeksforGeeks, Shapes of Atomic Orbitals</a>.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="page-section">
+                <div class="research-accuracy-banner page-card">
+                    <p>
+                        The target in our group is predictive level computational accuracy.
+                    </p>
+                </div>
+            </section>
+
+            <section class="page-section" aria-labelledby="research-thrusts-heading">
+                <h2 class="page-section-title" id="research-thrusts-heading">Research thrusts</h2>
+                <div class="research-thrust-list">
+                    <article class="research-thrust-card page-card" id="molecular-quantum-algorithms">
+                        <div class="research-thrust-index">01</div>
+                        <div class="research-thrust-body">
+                            <h3>Quantum algorithms for molecular ground and excited states.</h3>
+                            <p>
+                                We develop and stress-test quantum algorithms for molecular electronic structure, with a
+                                focus on subspace methods that can be analyzed and are resilient to errors on quantum
+                                computers. Current work includes quantum Krylov formulations, q-sc-EOM excited-state
+                                methods, generalized eigenvalue stability, and resource-conscious hardware workflows.
                             </p>
-                            <div class="research-highlight-block">
-                                <h3 class="research-highlight-heading">Selected highlights</h3>
-                                <ul class="research-highlight-list">
-                                    <li>
-                                        <a class="research-highlight-link"
-                                            href="https://doi.org/10.1021/acs.jctc.5c02010" target="_blank"
-                                            rel="noopener">Generalized Eigenvalue Problem in Subspace-Based
-                                            Excited-State Methods for Quantum Computers</a>
-                                        <span class="research-highlight-citation">Prince Frederick Kwao et al.,
-                                            J. Chem. Theory Comput. 22, 6, 2892-2903 (2026)</span>
-                                    </li>
-                                    <li>
-                                        <a class="research-highlight-link"
-                                            href="https://arxiv.org/abs/2512.11788" target="_blank"
-                                            rel="noopener">Exact and Tunable Quantum Krylov Subspaces via Unitary
-                                            Decomposition</a>
-                                        <span class="research-highlight-citation">Ayush Asthana, arXiv:2512.11788
-                                            (2025)</span>
-                                    </li>
-                                    <li>
-                                        <a class="research-highlight-link"
-                                            href="https://doi.org/10.1039/D2SC05371C"
-                                            target="_blank" rel="noopener">Quantum
-                                            self-consistent equation-of-motion method for computing molecular
-                                            excitation energies, ionization potentials, and electron affinities on a
-                                            quantum computer</a>
-                                        <span class="research-highlight-citation">Ayush Asthana et al., Chem. Sci. 14,
-                                            2405-2418 (2023)</span>
-                                    </li>
-                                    <li>
-                                        <a class="research-highlight-link"
-                                            href="https://doi.org/10.1021/acs.jctc.3c00731"
-                                            target="_blank" rel="noopener">Quantum Simulation of Molecular Response
-                                            Properties in the NISQ Era</a>
-                                        <span class="research-highlight-citation">Ashutosh Kumar et al., J. Chem.
-                                            Theory Comput. 19, 24, 9136-9150 (2023)</span>
-                                    </li>
-                                    <li>
-                                        <a class="research-highlight-link"
-                                            href="https://arxiv.org/abs/2601.10813" target="_blank"
-                                            rel="noopener">Chemically decisive
-                                            benchmarks on the path to quantum utility</a>
-                                        <span class="research-highlight-citation">Srivathsan Poyyapakkam Sundar et
-                                            al., arXiv:2601.10813 (2026)</span>
-                                    </li>
-                                    <li>NSF EPSCoR Fellow award (2024)</li>
-                                    <li>NSF ExpandQISE award (2024)</li>
-                                </ul>
-                                <a class="research-highlight-more" href="publications.html">See full publications
-                                    list</a>
-                            </div>
+                            <ul class="research-citation-list">
+                                <li><a href="https://arxiv.org/abs/2512.11788" target="_blank" rel="noopener">QKUD:
+                                        Exact and Tunable Quantum Krylov Subspaces via Unitary Decomposition</a></li>
+                                <li><a href="https://doi.org/10.1021/acs.jctc.5c02010" target="_blank"
+                                        rel="noopener">Generalized Eigenvalue Problem in Subspace-Based Excited-State
+                                        Methods</a></li>
+                                <li><a href="https://arxiv.org/abs/2604.05380" target="_blank"
+                                        rel="noopener">Molecular Excited States using Quantum Subspace Methods</a></li>
+                                <li><a href="https://doi.org/10.1039/D2SC05371C" target="_blank"
+                                        rel="noopener">Quantum self-consistent equation-of-motion method</a></li>
+                            </ul>
                         </div>
                     </article>
 
-                    <article class="research-section-card" id="relativistic-excited-states">
-                        <div class="research-section-body">
-                            <p class="research-section-number">02</p>
-                            <h2 class="research-section-title">Relativistic, Excited States, and Challenging
-                                Electronic Structure</h2>
-                            <p class="research-section-text">
-                                A central theme of the group is the development of theory for electronically
-                                challenging molecules, especially excited states, strong correlation, and heavy-element
-                                systems where relativistic and spin-orbit effects are essential. We aim to connect
-                                modern excited-state quantum chemistry, relativistic many-body theory, and emerging
-                                quantum-algorithm ideas to build methods that remain reliable in regimes where standard
-                                approximations often break down. This work provides a foundation for studying
-                                chemically important systems in which one or all of electronic excitation, strong correlation, and relativity must be
-                                treated to achieve predictive computational results.
+                    <article class="research-thrust-card page-card" id="challenging-quantum-chemistry">
+                        <div class="research-thrust-index">02</div>
+                        <div class="research-thrust-body">
+                            <h3>Quantum chemistry methods for challenging problems including treatment of relativistic effects and electronically excited states.</h3>
+                            <p>
+                                We are building classical quantum-chemistry methods for systems where routine
+                                approximations are not enough, including electronically excited states, relativistic
+                                effects, spin-orbit coupling, actinide bonding, and strongly correlated molecular
+                                response.
                             </p>
-                            <div class="research-highlight-block">
-                                <h3 class="research-highlight-heading">Selected highlights</h3>
-                                <ul class="research-highlight-list">
-                                    <li>
-                                        <a class="research-highlight-link"
-                                            href="https://doi.org/10.1063/5.0175041" target="_blank"
-                                            rel="noopener">Analytic gradients for relativistic exact-two-component
-                                            equation-of-motion coupled-cluster singles and doubles method</a>
-                                        <span class="research-highlight-citation">Chaoqun Zhang et al., J. Chem. Phys.
-                                            159, 244113 (2023)</span>
-                                    </li>
-                                    <li>
-                                        <a class="research-highlight-link"
-                                            href="https://doi.org/10.1021/acs.jctc.3c00731"
-                                            target="_blank" rel="noopener">Quantum Simulation of Molecular Response
-                                            Properties in the NISQ Era</a>
-                                        <span class="research-highlight-citation">Ashutosh Kumar et al., J. Chem.
-                                            Theory Comput. 19, 24, 9136-9150 (2023)</span>
-                                    </li>
-                                    <li>
-                                        <a class="research-highlight-link"
-                                            href="https://doi.org/10.1021/acs.jpca.0c03735" target="_blank"
-                                            rel="noopener">Mapping the Electronic Structure
-                                            of the Uranium(VI) Dinitride Molecule, UN<sub>2</sub></a>
-                                        <span class="research-highlight-citation">Gaoxiang Liu et al., J. Phys. Chem.
-                                            A 124, 32, 6486-6492 (2020)</span>
-                                    </li>
-                                    <li>NSF ExpandQISE award (2024)</li>
-                                    <li>UND Early Career grant (2023)</li>
-                                </ul>
-                                <a class="research-highlight-more" href="publications.html">See full publications
-                                    list</a>
-                            </div>
+                            <ul class="research-citation-list">
+                                <li><a href="https://doi.org/10.1063/5.0175041" target="_blank"
+                                        rel="noopener">Analytic gradients for relativistic exact-two-component
+                                        equation-of-motion coupled-cluster</a></li>
+                                <li><a href="https://doi.org/10.1021/acs.jpca.0c03735" target="_blank"
+                                        rel="noopener">Mapping the Electronic Structure of the Uranium(VI) Dinitride
+                                        Molecule, UN<sub>2</sub></a></li>
+                                <li><a href="https://doi.org/10.1021/acs.jctc.3c00731" target="_blank"
+                                        rel="noopener">Quantum Simulation of Molecular Response Properties in the NISQ
+                                        Era</a></li>
+                                <li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2427046&amp;HistoricalAwards=false"
+                                        target="_blank" rel="noopener">NSF ExpandQISE award 2427046</a></li>
+                            </ul>
                         </div>
                     </article>
 
-                    <article class="research-section-card" id="materials-simulation">
-                        <div class="research-section-body">
-                            <p class="research-section-number">03</p>
-                            <h2 class="research-section-title">Materials Simulation Using Tools from Quantum Chemistry
-                            </h2>
-                            <p class="research-section-text">
-                                We are also interested in bringing the language, methods, and standards of quantum
-                                chemistry into materials simulation. The broader goal is to use systematically
-                                improvable many-body methods, quantum-classical workflows, and chemically motivated
-                                benchmarks to study correlated materials with the same quantitative mindset used in
-                                molecular theory. This direction connects electronic-structure theory, quantum
-                                computing, and data-driven modeling, and it supports applications ranging from
-                                benchmark design to quantum-classical simulation of strongly correlated materials.
+                    <article class="research-thrust-card page-card" id="materials-simulation">
+                        <div class="research-thrust-index">03</div>
+                        <div class="research-thrust-body">
+                            <h3>Taking quantum chemistry towards condensed matter physics: Targeting challenging material simulation problems.</h3>
+                            <p>
+                                We develop quantum-chemistry methods for materials simulation problems that connect
+                                directly to condensed-matter physics. We aim to simulate condensed phases of strongly
+                                correlated materials using ideas from quantum chemistry, including systematic
+                                improvability, leading to new directions in this interdisciplinary science.
                             </p>
-                            <div class="research-highlight-block">
-                                <h3 class="research-highlight-heading">Selected highlights</h3>
-                                <ul class="research-highlight-list">
-                                    <li>DOE ARPA-E QC3 project, Quantum-Classical Ab Initio Co-Simulation of
-                                        Unconventional Superconductors (2026-2029)</li>
-                                </ul>
-                            </div>
+                            <ul class="research-citation-list">
+                                <li><a href="https://arpa-e.energy.gov/sites/default/files/2026-03/QC3_project_descriptions_v8.pdf"
+                                        target="_blank" rel="noopener">DOE ARPA-E QC3: Quantum-Classical Ab Initio
+                                        Co-Simulation of Unconventional Superconductors</a></li>
+                            </ul>
                         </div>
                     </article>
 
-                    <article class="research-section-card" id="software">
-                        <div class="research-section-body">
-                            <p class="research-section-number">04</p>
-                            <h2 class="research-section-title">Software for Quantum Computing and Quantum Chemistry</h2>
-                            <p class="research-section-text">
-                                Software development is an important part of our research program. We build and
-                                maintain tools that make quantum-computing methods for chemistry easier to develop,
-                                test, and use, with an emphasis on subspace methods, benchmarking, and automated
-                                derivation of many-body equations. These efforts are meant not only to support the
-                                group&rsquo;s own research, but also to provide infrastructure that can accelerate broader
-                                progress in quantum chemistry and quantum computing.
+                    <article class="research-thrust-card page-card" id="open-source-software">
+                        <div class="research-thrust-index">04</div>
+                        <div class="research-thrust-body">
+                            <h3>Scalable open source software.</h3>
+                            <p>
+                                Software is part of the research, not an afterthought. We develop reusable open-source
+                                tools for quantum algorithms, benchmark Hamiltonians, and automated derivation of
+                                many-body equations so that new ideas can be tested by the group and by the broader
+                                community.
                             </p>
-                            <div class="research-highlight-block">
-                                <h3 class="research-highlight-heading">Selected highlights</h3>
-                                <ul class="research-highlight-list">
-                                    <li>
-                                        <a class="research-highlight-link" href="software.html#qcant-software">QCANT</a>
-                                        <span class="research-highlight-citation">Research codebase for
-                                            quantum-computing methods in chemistry, especially subspace and
-                                            excited-state workflows.</span>
-                                    </li>
-                                    <li>
-                                        <a class="research-highlight-link"
-                                            href="software.html#benchmarkqc-software">BenchmarkQC</a>
-                                        <span class="research-highlight-citation">Benchmarking suite for chemically
-                                            relevant quantum-utility studies across diverse correlation regimes.</span>
-                                    </li>
-                                    <li>
-                                        <a class="research-highlight-link"
-                                            href="software.html#autogenwick-software">AutoGen-wick</a>
-                                        <span class="research-highlight-citation">Python package for automated
-                                            derivation of UCC and coupled-cluster many-body equations.</span>
-                                    </li>
-                                </ul>
-                                <a class="research-highlight-more" href="software.html">See software page</a>
-                            </div>
+                            <ul class="research-citation-list">
+                                <li><a href="software.html#qcant-software">QCANT</a>: quantum-computing methods for
+                                    chemistry, especially subspace and excited-state workflows.</li>
+                                <li><a href="software.html#benchmarkqc-software">BenchmarkQC</a>: chemically relevant
+                                    benchmark Hamiltonians and correlation-regime tests.</li>
+                                <li><a href="software.html#autogenwick-software">AutoGen-wick</a>: symbolic Wick's
+                                    theorem tooling for UCC and coupled-cluster equations.</li>
+                            </ul>
                         </div>
                     </article>
-                </section>
-            </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -306,12 +260,11 @@
                     <ul>
                         <li><a href="index.html">home</a></li>
                         <li><a href="research.html" aria-current="page">research</a></li>
-                        <li><a href="publications.html">publications</a></li>
-                        <li><a href="software.html">software</a></li>
+                        <li><a href="outputs.html">outputs</a></li>
                         <li><a href="people.html">people</a></li>
                         <li><a href="culture.html">culture</a></li>
                         <li><a href="news.html">news</a></li>
-                        <li><a href="opportunities.html">opportunities</a></li>
+                        <li><a href="join.html">join</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 {
   "name": "Asthana Group",
   "short_name": "Asthana Group",
+  "description": "Quantum chemistry, quantum computing, and scientific software at the University of North Dakota.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f7f9fc",
