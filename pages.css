@@ -1098,6 +1098,11 @@ body.site-shell a:hover {
     border-bottom: 1px solid var(--page-border);
 }
 
+.home-thrust-card--excited img {
+    height: clamp(170px, 20vw, 240px);
+    padding: clamp(6px, 1.2vw, 12px);
+}
+
 .outputs-feature-card img {
     display: block;
     width: 100%;
@@ -1301,6 +1306,11 @@ body.site-shell a:hover {
         padding: clamp(10px, 2vw, 18px);
     }
 
+    .home-thrust-card--excited img {
+        height: clamp(155px, 28vw, 215px);
+        padding: 8px;
+    }
+
     .join-hero > div {
         padding: 0 24px 26px;
     }
@@ -1396,6 +1406,11 @@ body.site-shell a:hover {
     .home-thrust-card img {
         height: clamp(120px, 42vw, 175px);
         padding: 12px;
+    }
+
+    .home-thrust-card--excited img {
+        height: clamp(145px, 48vw, 205px);
+        padding: 8px;
     }
 
     .join-hero img {
