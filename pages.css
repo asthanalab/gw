@@ -692,6 +692,10 @@ body.site-shell a:hover {
     gap: 18px;
 }
 
+.site-page .publications-list {
+    gap: 8px;
+}
+
 .news-page .news-list {
     gap: 5px;
     margin-top: 0;
@@ -725,13 +729,15 @@ body.site-shell a:hover {
 
 .site-page .publication-card {
     counter-increment: publication-count;
+    padding-top: 14px;
+    padding-bottom: 14px;
     padding-left: 74px;
 }
 
 .site-page .publication-card::after {
     content: counter(publication-count);
     position: absolute;
-    top: 24px;
+    top: 14px;
     left: 24px;
     display: inline-flex;
     align-items: center;
@@ -788,6 +794,12 @@ body.site-shell a:hover {
     line-height: 1.48;
 }
 
+.site-page .publication-card p {
+    margin-bottom: 4px;
+    font-size: 0.84rem;
+    line-height: 1.36;
+}
+
 .site-page .news-image {
     display: block;
     width: 100%;
@@ -801,11 +813,17 @@ body.site-shell a:hover {
 
 .site-page .publication-card .publication-title,
 .site-page .software-card .software-title {
-    margin: 0 0 8px;
-    font-family: "CircularStd", sans-serif;
-    font-size: 1.18rem;
-    line-height: 1.35;
+    margin: 0 0 4px;
+    font-family: inherit;
+    font-size: 0.84rem;
+    font-weight: 400;
+    line-height: 1.36;
     color: var(--page-text);
+}
+
+.site-page .publication-card .publication-title u {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
 }
 
 .site-page .publication-card .publication-authors,
@@ -1360,11 +1378,13 @@ body.site-shell a:hover {
     }
 
     .site-page .publication-card {
+        padding-top: 12px;
+        padding-bottom: 12px;
         padding-left: 62px;
     }
 
     .site-page .publication-card::after {
-        top: 20px;
+        top: 12px;
         left: 18px;
         width: 28px;
         height: 28px;
