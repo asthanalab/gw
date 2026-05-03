@@ -692,6 +692,32 @@ body.site-shell a:hover {
     gap: 18px;
 }
 
+.publications-container {
+    counter-reset: publication-count;
+}
+
+.site-page .publication-card {
+    counter-increment: publication-count;
+    padding-left: 74px;
+}
+
+.site-page .publication-card::after {
+    content: counter(publication-count);
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: var(--page-accent-soft);
+    color: var(--page-accent-strong);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
 .site-page .news-card p,
 .site-page .publication-card p,
 .site-page .opportunity-card p,
@@ -727,7 +753,7 @@ body.site-shell a:hover {
 .site-page .publication-feature-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 16px;
+    gap: 12px;
 }
 
 .site-page .publication-feature-card {
@@ -745,8 +771,8 @@ body.site-shell a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 180px;
-    padding: 14px;
+    min-height: 118px;
+    padding: 10px;
     background:
         radial-gradient(220px 120px at 20% 0%, rgba(18, 26, 45, 0.05), rgba(255, 255, 255, 0) 70%),
         linear-gradient(180deg, #f7f8fb 0%, #ffffff 100%);
@@ -755,30 +781,30 @@ body.site-shell a:hover {
 
 .site-page .publication-feature-media img {
     width: 100%;
-    max-height: 190px;
+    max-height: 118px;
     object-fit: contain;
-    border-radius: 14px;
+    border-radius: 10px;
     background: #ffffff;
 }
 
 .site-page .publication-feature-body {
     display: grid;
-    gap: 8px;
-    padding: 18px 18px 20px;
+    gap: 6px;
+    padding: 12px 14px 14px;
 }
 
-.site-page .publication-feature-title {
+.site-page .publication-feature-card .publication-feature-title {
     margin: 0;
     font-family: "CircularStd", sans-serif;
-    font-size: 0.97rem;
-    line-height: 1.35;
+    font-size: 0.7rem;
+    line-height: 1.1;
     color: var(--page-text);
 }
 
-.site-page .publication-feature-meta {
+.site-page .publication-feature-card .publication-feature-meta {
     margin: 0;
-    font-size: 0.86rem;
-    line-height: 1.5;
+    font-size: 0.78rem;
+    line-height: 1.35;
     color: var(--page-muted);
 }
 
@@ -1247,8 +1273,24 @@ body.site-shell a:hover {
         padding: 20px 18px;
     }
 
+    .site-page .publication-card {
+        padding-left: 62px;
+    }
+
+    .site-page .publication-card::after {
+        top: 20px;
+        left: 18px;
+        width: 28px;
+        height: 28px;
+        font-size: 0.76rem;
+    }
+
     .site-page .publication-feature-grid {
         grid-template-columns: 1fr;
+    }
+
+    .site-page .publication-feature-card {
+        padding: 0;
     }
 
     .home-hero-grid {
@@ -1285,16 +1327,16 @@ body.site-shell a:hover {
     }
 
     .site-page .publication-feature-media {
-        min-height: 210px;
-        padding: 16px;
+        min-height: 112px;
+        padding: 10px;
     }
 
     .site-page .publication-feature-media img {
-        max-height: 220px;
+        max-height: 112px;
     }
 
     .site-page .publication-feature-body {
-        padding: 18px 18px 20px;
+        padding: 12px 14px 14px;
     }
 
     .menu-wrap {
