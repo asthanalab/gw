@@ -692,6 +692,33 @@ body.site-shell a:hover {
     gap: 18px;
 }
 
+.news-page .news-list {
+    gap: 5px;
+    margin-top: 0;
+}
+
+.news-page .news-year {
+    margin-top: 34px;
+}
+
+.news-page .news-year:first-of-type {
+    margin-top: 0;
+}
+
+.news-year-heading {
+    margin: 0 0 12px;
+    font-family: "CircularStd", sans-serif;
+    font-size: 1.55rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--page-text);
+}
+
+.news-page .news-card {
+    margin: 0;
+    padding: 16px 18px;
+}
+
 .publications-container {
     counter-reset: publication-count;
 }
@@ -718,6 +745,36 @@ body.site-shell a:hover {
     font-weight: 700;
 }
 
+.publications-software-card .page-card-link-list {
+    display: block;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.publications-software-card .page-card-link-list li {
+    display: block;
+    padding: 0 0 10px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.publications-software-card .page-card-link-list li + li {
+    padding-top: 10px;
+}
+
+.publications-software-card .page-card-link-list li:last-child {
+    padding-bottom: 0;
+}
+
+.publications-software-card .page-card-link-list li::before {
+    content: none;
+}
+
 .site-page .news-card p,
 .site-page .publication-card p,
 .site-page .opportunity-card p,
@@ -725,13 +782,21 @@ body.site-shell a:hover {
     margin: 0 0 12px;
 }
 
+.site-page .news-card p {
+    margin-bottom: 8px;
+    font-size: 0.88rem;
+    line-height: 1.48;
+}
+
 .site-page .news-image {
     display: block;
     width: 100%;
-    max-width: 320px;
-    margin: 16px auto 0;
-    border-radius: 18px;
-    box-shadow: 0 14px 28px rgba(18, 26, 45, 0.1);
+    max-width: 240px;
+    max-height: 130px;
+    margin: 10px auto 0;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(18, 26, 45, 0.08);
 }
 
 .site-page .publication-card .publication-title,
@@ -1177,16 +1242,18 @@ body.site-shell a:hover {
 }
 
 .news-card h2 {
-    font-size: 1.2rem;
+    margin: 6px 0 6px;
+    font-size: 1rem;
+    line-height: 1.18;
 }
 
 .news-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
     align-items: center;
-    margin-bottom: 10px;
-    font-size: 0.82rem;
+    margin-bottom: 6px;
+    font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     color: var(--page-subtle);
@@ -1195,7 +1262,7 @@ body.site-shell a:hover {
 .news-label {
     display: inline-flex;
     align-items: center;
-    padding: 5px 10px;
+    padding: 3px 8px;
     border-radius: 999px;
     background: var(--page-accent-soft);
     border: 1px solid rgba(31, 79, 216, 0.16);
@@ -1268,9 +1335,18 @@ body.site-shell a:hover {
         line-height: 1.72;
     }
 
+    .site-page .news-card p {
+        font-size: 0.86rem;
+        line-height: 1.45;
+    }
+
     .site-page .page-card {
         border-radius: 20px;
         padding: 20px 18px;
+    }
+
+    .site-page .news-card {
+        padding: 14px 16px;
     }
 
     .site-page .publication-card {
