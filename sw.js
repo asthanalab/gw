@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v49';
+const staticCacheName = 'site-static-v50';
 const assets = [
     './',
     './index.html',
@@ -36,6 +36,7 @@ const assets = [
     './assets/img/4.png',
     './assets/img/theme1.png',
     './assets/img/research-photoisomerism-martinez-no-title.png',
+    './assets/img/research/heavy-element-orbitals-no-title.jpg',
     './assets/img/publications/chemically-decisive-benchmarks.png',
     './assets/img/publications/generalized-eigenvalue.jpeg',
     './assets/img/publications/quantum-krylov.png',
