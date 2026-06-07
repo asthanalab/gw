@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v67';
+const staticCacheName = 'site-static-v69';
 const assets = [
     './',
     './index.html',
@@ -42,6 +42,8 @@ const assets = [
     './assets/img/publications/generalized-eigenvalue.jpeg',
     './assets/img/publications/quantum-krylov.png',
     './assets/img/publications/qseom-ga.gif',
+    './assets/img/funding/arpa-e-logo.png',
+    './assets/img/funding/nsf-logo.svg',
     'https://fonts.googleapis.com/css?family=Lato:300,400,700'
 ];
 // install event

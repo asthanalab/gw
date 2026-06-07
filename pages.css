@@ -1348,6 +1348,48 @@ body.site-shell a:hover {
     gap: 12px;
 }
 
+.funding-card-header--with-logo {
+    grid-template-columns: 118px minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+}
+
+.funding-card-heading {
+    display: grid;
+    min-width: 0;
+    gap: 12px;
+}
+
+.funding-agency-logo-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 118px;
+    min-height: 74px;
+    padding: 12px;
+    border: 1px solid #e7ebf4;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 28px rgba(20, 35, 66, 0.08);
+}
+
+.funding-agency-logo {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 54px;
+    object-fit: contain;
+}
+
+.funding-agency-logo--arpae {
+    max-height: 40px;
+}
+
+.funding-agency-logo--nsf {
+    width: 56px;
+    height: 56px;
+}
+
 .funding-card-header h2 {
     margin: 0;
     font-family: "CircularStd", sans-serif;
@@ -1563,6 +1605,27 @@ body.site-shell a:hover {
 
     .funding-card {
         gap: 14px;
+    }
+
+    .funding-card-header--with-logo {
+        grid-template-columns: 96px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .funding-agency-logo-frame {
+        width: 96px;
+        min-height: 62px;
+        padding: 9px;
+        border-radius: 14px;
+    }
+
+    .funding-agency-logo--arpae {
+        max-height: 32px;
+    }
+
+    .funding-agency-logo--nsf {
+        width: 46px;
+        height: 46px;
     }
 
     .funding-link-row a {
