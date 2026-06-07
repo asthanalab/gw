@@ -9,6 +9,7 @@ folder, and `CNAME` points the site to `theasthanagroup.com`.
 gw/
 ├── index.html              # Home page
 ├── research.html           # Research areas and selected highlights
+├── funding.html            # Research funding and computing resources
 ├── outputs.html            # Publications, software, talks, training, funding
 ├── publications.html       # Highlighted and full publication lists
 ├── software.html           # Group software projects
@@ -79,6 +80,7 @@ Common reusable classes live mainly in `pages.css`:
 | --- | --- | --- | --- |
 | `index.html` | Landing/home page for the group. | Hero, latest updates, research thrusts, funding/collaboration callout. | `manifest.json`, `assets/js/app.js`, optimized group image. |
 | `research.html` | Explains the group's research program. | Research problem cards, accuracy target, side/sub navigation, four research program cards, selected highlights. | Publication graphics, `assets/img/theme1.png`, `assets/img/4.png`, `research.css`. |
+| `funding.html` | Lists sponsored projects and computing-resource support. | Funding total strip, grant cards, metadata grid, source links. | Public award and program links. |
 | `outputs.html` | Collects research products. | Papers/software cards, talks/training section, funding/collaboration map. | Publication graphics, `assets/img/4.png`. |
 | `publications.html` | Lists research outputs. | Highlighted publication cards, main publications list, before-UND publications, software citations. | `assets/img/publications/generalized-eigenvalue.jpeg`, `qseom-ga.gif`, `quantum-krylov.png`, `chemically-decisive-benchmarks.png`. |
 | `software.html` | Lists software projects and citations. | Cards for QCANT, BenchmarkQC, AutoGen-wick, and CFOUR. | External GitHub/CFOUR links. |
@@ -259,7 +261,7 @@ assets/js/app.js
   Called by `index.html`; registers `./sw.js`.
 
 sw.js
-  Defines cache `site-static-v15` and pre-caches core HTML/CSS/assets. Fetches
+  Defines cache `site-static-v62` and pre-caches core HTML/CSS/assets. Fetches
   from cache first, then network.
 
 manifest.json
@@ -276,6 +278,7 @@ Home
 │   ├── #challenging-quantum-chemistry
 │   ├── #materials-simulation
 │   └── #open-source-software
+├── Funding
 ├── Outputs
 │   ├── Publications
 │   ├── Software

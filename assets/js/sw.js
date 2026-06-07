@@ -1,14 +1,17 @@
-const staticCacheName = 'site-static-v15';
+const staticCacheName = 'site-static-v16';
 const assets = [
     './',
     './index.html',
     './manifest.json',
     './research.html',
+    './funding.html',
+    './outputs.html',
     './publications.html',
     './software.html',
     './people.html',
     './culture.html',
     './news.html',
+    './join.html',
     './opportunities.html',
     './legal.html',
     './404.html',
