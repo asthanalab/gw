@@ -207,12 +207,12 @@ The software page also includes a CFOUR card without an internal ID.
 Culture gallery images are currently:
 
 ```text
-assets/img/optimized/grp2-1200.jpg
-assets/img/optimized/bday1-1200.jpg
-assets/img/optimized/bday2-1200.jpg
-assets/img/optimized/catan-1200.jpg
-assets/img/optimized/group24_24-1400.jpg
 assets/img/optimized/groupacs-1200.jpg
+assets/img/optimized/group24_24-1400.jpg
+assets/img/optimized/catan-1200.jpg
+assets/img/optimized/bday2-1200.jpg
+assets/img/optimized/bday1-1200.jpg
+assets/img/optimized/grp2-1200.jpg
 ```
 
 ## Asset Map
@@ -261,7 +261,7 @@ assets/js/app.js
   Called by `index.html`; registers `./sw.js`.
 
 sw.js
-  Defines cache `site-static-v75` and pre-caches core HTML/CSS/assets. Fetches
+  Defines cache `site-static-v76` and pre-caches core HTML/CSS/assets. Fetches
   from cache first, then network.
 
 manifest.json
