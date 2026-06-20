@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v76';
+const staticCacheName = 'site-static-v77';
 const assets = [
     './',
     './index.html',
@@ -30,6 +30,7 @@ const assets = [
     './assets/img/optimized/bday1-1200.jpg',
     './assets/img/optimized/bday2-1200.jpg',
     './assets/img/optimized/catan-1200.jpg',
+    './assets/img/optimized/catan-scoreboard-1400.jpg',
     './assets/img/optimized/groupacs-1200.jpg',
     './assets/img/optimized/sri-700.jpg',
     './assets/img/optimized/Mushir-700.jpg',
