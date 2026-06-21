@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v77';
+const staticCacheName = 'site-static-v78';
 const assets = [
     './',
     './index.html',
@@ -32,6 +32,9 @@ const assets = [
     './assets/img/optimized/catan-1200.jpg',
     './assets/img/optimized/catan-scoreboard-1400.jpg',
     './assets/img/optimized/groupacs-1200.jpg',
+    './assets/img/optimized/spring-theoretical-chemists-2026-1.jpg',
+    './assets/img/optimized/spring-theoretical-chemists-2026-2.jpg',
+    './assets/img/optimized/spring-theoretical-chemists-2026-3.jpg',
     './assets/img/optimized/sri-700.jpg',
     './assets/img/optimized/Mushir-700.jpg',
     './assets/img/optimized/adan-700.jpg',
