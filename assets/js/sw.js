@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v32';
+const staticCacheName = 'site-static-v33';
 const assets = [
     './',
     './index.html',
