@@ -265,7 +265,7 @@ assets/js/app.js
   Called by `index.html`; registers `./sw.js`.
 
 sw.js
-  Defines cache `site-static-v79` and pre-caches core HTML/CSS/assets. Fetches
+  Defines cache `site-static-v80` and pre-caches core HTML/CSS/assets. Fetches
   from cache first, then network.
 
 manifest.json
