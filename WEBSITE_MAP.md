@@ -79,7 +79,7 @@ Common reusable classes live mainly in `pages.css`:
 | Page | Purpose | Main Components | Key Assets |
 | --- | --- | --- | --- |
 | `index.html` | Landing/home page for the group. | Hero, latest updates, research thrusts, funding/collaboration callout. | `manifest.json`, `assets/js/app.js`, optimized group image. |
-| `research.html` | Explains the group's research program. | Research problem cards, accuracy target, side/sub navigation, four research program cards, selected highlights. | Publication graphics, `assets/img/theme1.png`, `assets/img/4.png`, `research.css`. |
+| `research.html` | Explains the group's research program. | Research problem cards, accuracy target, side/sub navigation, four research program cards, selected highlights. | FeMoco and publication graphics, `assets/img/theme1.png`, `assets/img/4.png`, `research.css`. |
 | `funding.html` | Lists sponsored projects and computing-resource support. | Funding total strip, grant cards, metadata grid, source links. | Public award and program links. |
 | `outputs.html` | Collects research products. | Papers/software cards, talks/training section, collaboration ecosystem card. | Publication graphics, `assets/img/4.png`. |
 | `publications.html` | Lists research outputs. | Highlighted publication cards, main publications list, before-UND publications, software citations. | `assets/img/publications/generalized-eigenvalue.jpeg`, `qseom-ga.gif`, `quantum-krylov.png`, `chemically-decisive-benchmarks.png`. |
@@ -225,6 +225,9 @@ assets/img/optimized/grp2-1200.jpg
 assets/img/
   Group, people, research, news, and logo images.
 
+assets/img/research/
+  Research problem card imagery.
+
 assets/img/publications/
   Publication thumbnail images and GIFs.
 
@@ -265,7 +268,7 @@ assets/js/app.js
   Called by `index.html`; registers `./sw.js`.
 
 sw.js
-  Defines cache `site-static-v85` and pre-caches core HTML/CSS/assets. Fetches
+  Defines cache `site-static-v86` and pre-caches core HTML/CSS/assets. Fetches
   from cache first, then network.
 
 manifest.json
