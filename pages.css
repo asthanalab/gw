@@ -811,6 +811,11 @@ body.site-shell a:hover {
     box-shadow: 0 10px 20px rgba(18, 26, 45, 0.08);
 }
 
+.site-page .news-image--portrait {
+    max-height: 320px;
+    object-fit: contain;
+}
+
 .site-page .publication-card .publication-title,
 .site-page .software-card .software-title {
     margin: 0 0 4px;
