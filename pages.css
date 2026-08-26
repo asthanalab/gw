@@ -812,7 +812,8 @@ body.site-shell a:hover {
 }
 
 .site-page .news-image--portrait {
-    max-height: 320px;
+    height: auto;
+    max-height: none;
     object-fit: contain;
 }
 
