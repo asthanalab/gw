@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v89';
+const staticCacheName = 'site-static-v90';
 const assets = [
     './',
     './index.html',
@@ -21,6 +21,7 @@ const assets = [
     './pages.css',
     './research.css',
     './assets/js/app.js',
+    './assets/js/home-latest.js',
     './assets/js/news.js',
     './assets/img/logoUND.jpeg',
     './assets/img/optimized/group24-1600-v2.jpg',

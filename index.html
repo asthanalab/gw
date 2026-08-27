@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/home-latest.js" defer></script>
     <link rel="manifest" href="manifest.json">
 </head>
 
@@ -71,25 +72,34 @@
             </section>
 
             <section class="page-section home-latest-section" aria-labelledby="latest-heading">
-                <h2 class="page-section-title" id="latest-heading">Latest</h2>
-                <div class="home-latest-grid">
-                    <a class="page-card page-card--link home-latest-card" href="https://www.icqc2026.org/program"
-                        target="_blank" rel="noopener">
-                        <span class="page-tag">Talk</span>
-                        <h3>ICQC 2026 talk</h3>
-                        <p>Ayush gave the ICQC 2026 talk on Quantum Krylov using unitary decomposition at UC Berkeley.</p>
+                <div class="home-section-heading">
+                    <h2 class="page-section-title" id="latest-heading">Latest news</h2>
+                    <a class="home-section-link" href="news.html">View all news</a>
+                </div>
+                <div class="home-latest-grid" data-home-latest aria-live="polite">
+                    <a class="page-card page-card--link home-latest-card" href="news.html#latest">
+                        <div class="home-latest-meta">
+                            <span class="page-tag">Talks &amp; conferences</span>
+                            <time class="home-latest-date" datetime="2026-08">August 2026</time>
+                        </div>
+                        <h3>Prince presents at the ACS Fall meeting</h3>
+                        <p>Prince presented a poster on his recent work at the ACS Fall meeting in Chicago.</p>
                     </a>
-                    <a class="page-card page-card--link home-latest-card" href="funding.html">
-                        <span class="page-tag">Funding</span>
-                        <h3>DOE ARPA-E QC3 collaboration</h3>
-                        <p>Quantum-classical ab initio co-simulation of unconventional superconductors with NREL and
-                            Infleqtion.</p>
+                    <a class="page-card page-card--link home-latest-card" href="news.html#latest">
+                        <div class="home-latest-meta">
+                            <span class="page-tag">People</span>
+                            <time class="home-latest-date" datetime="2026-08">August 2026</time>
+                        </div>
+                        <h3>Tanya Keshari joins the group</h3>
+                        <p>Welcome to Tanya Keshari, who joined the Asthana Group as a Ph.D. student.</p>
                     </a>
-                    <a class="page-card page-card--link home-latest-card" href="join.html">
-                        <span class="page-tag">Join</span>
-                        <h3>Graduate and postdoctoral openings</h3>
-                        <p>Build methods at the intersection of quantum chemistry, quantum computing, and materials
-                            simulation.</p>
+                    <a class="page-card page-card--link home-latest-card" href="news.html#latest">
+                        <div class="home-latest-meta">
+                            <span class="page-tag">Group activities</span>
+                            <time class="home-latest-date" datetime="2026-08">August 2026</time>
+                        </div>
+                        <h3>Aditya Aiyer visits the Asthana Group</h3>
+                        <p>Dr. Aditya Aiyer visited the group to discuss quantum-computing algorithms for fluid dynamics.</p>
                     </a>
                 </div>
             </section>
