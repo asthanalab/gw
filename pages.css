@@ -1336,7 +1336,6 @@ body.site-shell a:hover {
     color: var(--page-muted);
 }
 
-.home-latest-grid,
 .home-thrust-grid,
 .outputs-feature-grid,
 .outputs-partner-grid {
@@ -1344,55 +1343,6 @@ body.site-shell a:hover {
     gap: 18px;
 }
 
-.home-latest-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.home-section-heading {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.home-section-link {
-    flex-shrink: 0;
-    margin-top: 2px;
-    padding: 6px 10px;
-    border-radius: 9px;
-    color: var(--page-accent-strong);
-    font-size: 0.82rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.home-section-link:hover,
-.home-section-link:focus-visible {
-    background: var(--page-accent-soft);
-    color: var(--page-accent-strong);
-    text-decoration: none;
-}
-
-.home-latest-meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-}
-
-.home-latest-date {
-    color: var(--page-subtle);
-    font-size: 0.74rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-}
-
-.home-latest-grid[aria-busy="true"] {
-    opacity: 0.74;
-}
-
-.home-latest-card h3,
 .home-thrust-card h3,
 .outputs-feature-card h2,
 .join-hero h2,
@@ -1403,7 +1353,6 @@ body.site-shell a:hover {
     color: var(--page-text);
 }
 
-.home-latest-card h3,
 .home-thrust-card h3,
 .outputs-feature-card h2,
 .join-hero h2 {
@@ -1796,7 +1745,6 @@ body.site-shell a:hover {
         grid-template-columns: 1fr;
     }
 
-    .home-latest-grid,
     .home-thrust-grid,
     .outputs-feature-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1905,7 +1853,6 @@ body.site-shell a:hover {
         justify-content: center;
     }
 
-    .home-latest-grid,
     .home-thrust-grid,
     .outputs-feature-grid {
         grid-template-columns: 1fr;
