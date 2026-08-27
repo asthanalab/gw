@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/news.js" defer></script>
 </head>
 
 <body class="site-shell">
@@ -57,9 +58,35 @@
                 <p class="news-subtitle page-subtitle">Papers, funding, talks, awards, and group milestones.</p>
             </header>
 
-            <section class="news-year" aria-labelledby="news-2026">
-                <h2 class="news-year-heading" id="news-2026">2026</h2>
-                <div class="news-list" aria-label="2026 news">
+            <div class="news-toolbar page-card">
+                <div class="news-toolbar-group" data-news-controls hidden>
+                    <span class="news-toolbar-label">Show</span>
+                    <div class="news-filter-list" role="group" aria-label="Filter news by category">
+                        <button type="button" class="news-filter is-active" data-news-filter="all" aria-pressed="true">All</button>
+                        <button type="button" class="news-filter" data-news-filter="research" aria-pressed="false">Research</button>
+                        <button type="button" class="news-filter" data-news-filter="talks" aria-pressed="false">Talks &amp; conferences</button>
+                        <button type="button" class="news-filter" data-news-filter="awards" aria-pressed="false">Awards &amp; funding</button>
+                        <button type="button" class="news-filter" data-news-filter="people" aria-pressed="false">People</button>
+                        <button type="button" class="news-filter" data-news-filter="group" aria-pressed="false">Group activities</button>
+                    </div>
+                </div>
+                <nav class="news-year-nav" aria-label="Jump to news by year">
+                    <span class="news-toolbar-label">Jump to</span>
+                    <a href="#latest">Latest</a>
+                    <a href="#news-2026" data-news-year-link>2026</a>
+                    <a href="#news-2025" data-news-year-link>2025</a>
+                    <a href="#news-2024" data-news-year-link>2024</a>
+                    <a href="#news-2023" data-news-year-link>2023</a>
+                </nav>
+                <p class="news-filter-status" data-news-filter-status aria-live="polite"></p>
+            </div>
+
+            <section class="news-latest" id="latest" aria-labelledby="news-latest-heading">
+                <div class="news-section-heading">
+                    <p class="page-eyebrow">Newest first</p>
+                    <h2 class="news-year-heading" id="news-latest-heading">Latest updates</h2>
+                </div>
+                <div class="news-list news-list--latest" aria-label="Latest news">
                 <article class="news-card page-card">
                     <div class="news-meta"><span class="news-label">Conference</span><time datetime="2026-08">August 2026</time></div>
                     <h2>Prince presents at the ACS Fall meeting</h2>
@@ -127,6 +154,22 @@
                         Keep an eye on upcoming papers from Prince. Congratulations, Prince!</p>
                 </article>
 
+                </div>
+            </section>
+
+            <section class="news-archive" aria-labelledby="news-archive-heading">
+                <div class="news-section-heading">
+                    <p class="page-eyebrow">Browse by year</p>
+                    <h2 class="news-year-heading" id="news-archive-heading">Archive</h2>
+                </div>
+
+                <details class="news-archive-year" id="news-2026">
+                    <summary>
+                        <span>Earlier in 2026</span>
+                        <span class="news-archive-count">7 updates</span>
+                    </summary>
+                    <div class="news-list" aria-label="Earlier 2026 news">
+
                 <article class="news-card page-card">
                     <div class="news-meta"><span class="news-label">Paper</span><time datetime="2026-04">April 2026</time></div>
                     <h2>Molecular excited states using quantum subspace methods</h2>
@@ -185,11 +228,14 @@
                 </article>
 
                 </div>
-            </section>
+                </details>
 
-            <section class="news-year" aria-labelledby="news-2025">
-                <h2 class="news-year-heading" id="news-2025">2025</h2>
-                <div class="news-list" aria-label="2025 news">
+                <details class="news-archive-year" id="news-2025">
+                    <summary>
+                        <span>2025</span>
+                        <span class="news-archive-count">7 updates</span>
+                    </summary>
+                    <div class="news-list" aria-label="2025 news">
                 <article class="news-card page-card">
                     <div class="news-meta"><span class="news-label">People</span><time datetime="2025-12">December 2025</time></div>
                     <h2>Mushir Thodika joins the group</h2>
@@ -242,11 +288,14 @@
                 </article>
 
                 </div>
-            </section>
+                </details>
 
-            <section class="news-year" aria-labelledby="news-2024">
-                <h2 class="news-year-heading" id="news-2024">2024</h2>
-                <div class="news-list" aria-label="2024 news">
+                <details class="news-archive-year" id="news-2024">
+                    <summary>
+                        <span>2024</span>
+                        <span class="news-archive-count">7 updates</span>
+                    </summary>
+                    <div class="news-list" aria-label="2024 news">
                 <article class="news-card page-card">
                     <div class="news-meta"><span class="news-label">Funding</span><time datetime="2024-11">November 2024</time></div>
                     <h2>NSF EPSCoR Fellow award</h2>
@@ -299,11 +348,14 @@
                 </article>
 
                 </div>
-            </section>
+                </details>
 
-            <section class="news-year" aria-labelledby="news-2023">
-                <h2 class="news-year-heading" id="news-2023">2023</h2>
-                <div class="news-list" aria-label="2023 news">
+                <details class="news-archive-year" id="news-2023">
+                    <summary>
+                        <span>2023</span>
+                        <span class="news-archive-count">4 updates</span>
+                    </summary>
+                    <div class="news-list" aria-label="2023 news">
                 <article class="news-card page-card">
                     <div class="news-meta"><span class="news-label">Funding</span><time datetime="2023-11">November 2023</time></div>
                     <h2>UND Early Career Grant</h2>
@@ -332,6 +384,7 @@
                     <p>Prince Kwao joined the lab as a graduate student.</p>
                 </article>
                 </div>
+                </details>
             </section>
         </div>
     </main>
