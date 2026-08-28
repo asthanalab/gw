@@ -25,6 +25,16 @@
             const [category, normalizedLabel] = categoryMap[originalLabel] || ['group', 'Group activities'];
             card.dataset.newsCategory = category;
             if (label) label.textContent = normalizedLabel;
+
+            const heading = card.querySelector('h2');
+            if (card.id && heading && !heading.querySelector('.news-permalink')) {
+                const permalink = document.createElement('a');
+                permalink.className = 'news-permalink';
+                permalink.href = `#${card.id}`;
+                permalink.textContent = '#';
+                permalink.setAttribute('aria-label', `Link to ${heading.textContent.trim()}`);
+                heading.append(' ', permalink);
+            }
         });
 
         const controls = page.querySelector('[data-news-controls]');
@@ -35,6 +45,12 @@
         const status = page.querySelector('[data-news-filter-status]');
 
         if (controls) controls.hidden = false;
+
+        archiveYears.forEach((year) => {
+            const count = year.querySelectorAll('.news-card').length;
+            const countLabel = year.querySelector('.news-archive-count');
+            if (countLabel) countLabel.textContent = `${count} update${count === 1 ? '' : 's'}`;
+        });
 
         const applyFilter = (filter) => {
             let visibleCount = 0;

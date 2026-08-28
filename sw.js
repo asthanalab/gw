@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v92';
+const staticCacheName = 'site-static-v93';
 const assets = [
     './',
     './index.html',
@@ -22,35 +22,7 @@ const assets = [
     './research.css',
     './assets/js/app.js',
     './assets/js/news.js',
-    './assets/img/logoUND.jpeg',
-    './assets/img/optimized/group24-1600-v2.jpg',
-    './assets/img/optimized/group24_24-1400.jpg',
-    './assets/img/optimized/pacs-1200.jpg',
-    './assets/img/optimized/gpAPS-1200.jpg',
-    './assets/img/optimized/grp2-1200.jpg',
-    './assets/img/optimized/bday1-1200.jpg',
-    './assets/img/optimized/bday2-1200.jpg',
-    './assets/img/optimized/catan-1200.jpg',
-    './assets/img/optimized/catan-scoreboard-1400.jpg',
-    './assets/img/optimized/groupacs-1200.jpg',
-    './assets/img/optimized/spring-theoretical-chemists-2026-1.jpg',
-    './assets/img/optimized/spring-theoretical-chemists-2026-2.jpg',
-    './assets/img/optimized/spring-theoretical-chemists-2026-3.jpg',
-    './assets/img/optimized/sri-700.jpg',
-    './assets/img/optimized/Mushir-700.jpg',
-    './assets/img/optimized/adan-700.jpg',
-    './assets/img/4.png',
-    './assets/img/theme1.png',
-    './assets/img/research-photoisomerism-martinez-no-title.png',
-    './assets/img/research/femoco-career.png',
-    './assets/img/research/heavy-element-orbitals-no-title.jpg',
-    './assets/img/publications/chemically-decisive-benchmarks.png',
-    './assets/img/publications/generalized-eigenvalue.jpeg',
-    './assets/img/publications/quantum-krylov.png',
-    './assets/img/publications/qseom-ga.gif',
-    './assets/img/funding/arpa-e-logo.png',
-    './assets/img/funding/nsf-logo.svg',
-    'https://fonts.googleapis.com/css?family=Lato:300,400,700'
+    './assets/img/logoUND.jpeg'
 ];
 // install event
 self.addEventListener('install', evt => {
@@ -94,7 +66,14 @@ self.addEventListener('fetch', evt => {
 
     evt.respondWith(
         caches.match(request).then(cacheRes => {
-            return cacheRes || fetch(request);
+            if (cacheRes) return cacheRes;
+            return fetch(request).then(networkRes => {
+                if (request.url.startsWith(self.location.origin) && networkRes.ok) {
+                    const copy = networkRes.clone();
+                    caches.open(staticCacheName).then(cache => cache.put(request, copy));
+                }
+                return networkRes;
+            });
         })
     );
 });

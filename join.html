@@ -2,16 +2,6 @@
 <html lang="en">
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159411627-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-159411627-1');
-    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
     <meta name="description"
@@ -26,16 +16,13 @@
     <title>Join | Asthana Group</title>
     <link rel="canonical" href="https://theasthanagroup.com/join.html">
     <link rel="icon" type="image/jpeg" href="assets/img/logoUND.jpeg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pages.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src="assets/js/app.js"></script>
+    <script defer src="assets/js/app.js"></script>
 </head>
 
 <body class="site-shell">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="nav-desk site-nav" aria-label="Primary">
         <div class="nav-items site-nav-items">
             <ul class="site-nav-list">
@@ -51,7 +38,7 @@
         </div>
     </nav>
 
-    <main class="join-page site-page content">
+    <main id="main-content" class="join-page site-page content">
         <div class="container page-container">
             <header class="page-header">
                 <p class="page-eyebrow">Join the group</p>
@@ -75,8 +62,10 @@
                         </p>
                         <div class="page-chip-row">
                             <a class="page-tag" href="mailto:ayush.asthana@und.edu">email Ayush</a>
-                            <a class="page-tag" href="people.html">meet the group</a>
-                            <a class="page-tag" href="research.html">research areas</a>
+                            <a class="page-tag" href="https://und.edu/programs/chemistry-phd/index.html"
+                                target="_blank" rel="noopener">Chemistry PhD program</a>
+                            <a class="page-tag" href="https://und.edu/admissions/graduate/apply/"
+                                target="_blank" rel="noopener">apply to UND</a>
                         </div>
                     </div>
                 </div>
@@ -86,21 +75,27 @@
                 <h2 class="page-section-title">Pathways</h2>
                 <div class="page-grid">
                     <article class="opportunity-card page-card">
+                        <span class="page-tag">Planned search</span>
                         <h3>Postdoctoral researchers</h3>
                         <p>
-                            We will have a new postdoctoral opening soon in quantum algorithms and strong-correlation
-                            methods for molecules and materials.
+                            A postdoctoral search in quantum algorithms and strong-correlation methods for molecules
+                            and materials is planned. Details will be posted here when the position opens; prospective
+                            candidates may email Ayush to introduce their work.
                         </p>
                     </article>
                     <article class="opportunity-card page-card">
+                        <span class="page-tag">Applications open through UND</span>
                         <h3>Graduate students</h3>
                         <p>
                             Students can build skills in quantum algorithms, electronic-structure theory, numerical
                             methods, and open scientific software. We hire 1-2 students every year. Grand Forks is a
                             friendly, convenient town for students.
                         </p>
+                        <p class="opportunity-link"><a href="https://und.edu/programs/chemistry-phd/index.html"
+                                target="_blank" rel="noopener">Review the Chemistry PhD program</a></p>
                     </article>
                     <article class="opportunity-card page-card">
+                        <span class="page-tag">UND students</span>
                         <h3>Undergraduate researchers</h3>
                         <p>
                             UND undergraduates from chemistry, physics, computer science, mathematics, engineering, and
@@ -124,7 +119,9 @@
                         </li>
                         <li>
                             <span>For graduate applicants</span>
-                            <span>Apply through UND Chemistry and mention your interest in the Asthana Group.</span>
+                            <span><a href="https://und.edu/admissions/graduate/apply/" target="_blank"
+                                    rel="noopener">Apply through UND Graduate Admissions</a> and mention your interest
+                                in the Asthana Group.</span>
                         </li>
                         <li>
                             <span>For postdocs</span>
@@ -158,11 +155,11 @@
     </main>
 
     <footer class="footer-full site-footer">
-        <div class="social-icons" aria-label="Footer social links">
-            <a target="_blank" rel="noopener" href="mailto:ayushasthana15@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a target="_blank" rel="noopener" href="https://github.com/asthanalab"><i class="fab fa-github"></i></a>
-            <a target="_blank" rel="noopener" href="https://twitter.com/ayushasthana92"><i class="fab fa-twitter"></i></a>
-        </div>
+        <nav class="footer-links" aria-label="Connect with the Asthana Group">
+            <a href="mailto:ayush.asthana@und.edu">Email</a>
+            <a target="_blank" rel="noopener" href="https://github.com/asthanalab">GitHub</a>
+            <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=J4V8W7sAAAAJ&amp;hl=en">Google Scholar</a>
+        </nav>
         <div class="site-footer-meta">
             <span class="site-footer-note">Asthana Group, University of North Dakota</span>
             <a class="site-footer-legal" href="legal.html">legal</a>
@@ -170,7 +167,7 @@
     </footer>
 
     <div class="menu-wrap">
-        <input type="checkbox" class="toggler" aria-label="Open navigation">
+        <button type="button" class="toggler" aria-label="Open navigation" aria-expanded="false"></button>
         <div class="hamburger">
             <div></div>
         </div>

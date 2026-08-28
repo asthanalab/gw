@@ -14,16 +14,13 @@
     <link rel="canonical" href="https://theasthanagroup.com/404.html">
     <title>404 | Asthana Group</title>
     <link rel="icon" type="image/jpeg" href="assets/img/logoUND.jpeg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pages.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src="assets/js/app.js"></script>
+    <script defer src="assets/js/app.js"></script>
 </head>
 
 <body class="site-shell">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <nav class="nav-desk site-nav" aria-label="Primary">
         <div class="nav-items site-nav-items">
             <ul class="site-nav-list">
@@ -39,7 +36,7 @@
         </div>
     </nav>
 
-    <main class="site-page page-compact content">
+    <main id="main-content" class="site-page page-compact content">
         <div class="container page-container">
             <section class="page-card page-compact-card">
                 <header class="page-header">
@@ -58,11 +55,11 @@
     </main>
 
     <footer class="footer-full site-footer">
-        <div class="social-icons" aria-label="Footer social links">
-            <a target="_blank" rel="noopener" href="mailto:ayushasthana15@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a target="_blank" rel="noopener" href="https://github.com/asthanalab"><i class="fab fa-github"></i></a>
-            <a target="_blank" rel="noopener" href="https://twitter.com/ayushasthana92"><i class="fab fa-twitter"></i></a>
-        </div>
+        <nav class="footer-links" aria-label="Connect with the Asthana Group">
+            <a href="mailto:ayush.asthana@und.edu">Email</a>
+            <a target="_blank" rel="noopener" href="https://github.com/asthanalab">GitHub</a>
+            <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=J4V8W7sAAAAJ&amp;hl=en">Google Scholar</a>
+        </nav>
         <div class="site-footer-meta">
             <span class="site-footer-note">Asthana Group, University of North Dakota</span>
             <a class="site-footer-legal" href="legal.html">legal</a>
@@ -70,7 +67,7 @@
     </footer>
 
     <div class="menu-wrap">
-        <input type="checkbox" class="toggler" aria-label="Open navigation">
+        <button type="button" class="toggler" aria-label="Open navigation" aria-expanded="false"></button>
         <div class="hamburger">
             <div></div>
         </div>
