@@ -2082,6 +2082,10 @@ body.site-shell a:hover {
     color: var(--page-subtle);
 }
 
+.people-alumni-group + .people-alumni-group {
+    margin-top: 28px;
+}
+
 .publication-authors strong {
     color: var(--page-text);
     font-weight: 700;
