@@ -368,13 +368,43 @@ body.site-shell a:hover {
 
 .home-hero {
     max-width: 760px;
-    padding: 36px 0 30px;
+    margin: 0 auto;
+    padding: 6px 0 4px;
+}
+
+.home-page.site-page {
+    min-height: 0;
+    padding-top: 0;
+    padding-bottom: 4px;
+}
+
+.home-page .page-eyebrow {
+    margin-bottom: 6px;
+}
+
+.home-page .page-title {
+    margin-bottom: 8px;
+    font-size: clamp(2.2rem, 3.2vw, 2.9rem);
+}
+
+.home-page .page-title::after {
+    margin-top: 10px;
+}
+
+.home-page .page-subtitle {
+    line-height: 1.55;
+}
+
+.home-page + .site-footer {
+    padding-top: 8px;
+    padding-bottom: 14px;
 }
 
 .home-actions {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 16px;
     margin-top: 28px;
 }
@@ -687,7 +717,7 @@ body.site-shell a:hover {
 .site-page .opportunities-list,
 .site-page .software-list {
     display: grid;
-    gap: 18px;
+    gap: 12px;
 }
 
 .site-page .publications-list {
@@ -1294,27 +1324,34 @@ body.site-shell a:hover {
 
 .home-hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
-    gap: 30px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
     align-items: center;
-    padding-top: 18px;
+    justify-items: center;
+    padding-top: 0;
 }
 
 .home-hero-copy .page-header,
 .home-hero-copy {
-    text-align: left;
+    width: 100%;
+    text-align: center;
 }
 
 .home-hero-copy .page-title::after {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home-hero-copy .page-subtitle {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 680px;
 }
 
 .home-hero-media {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
 }
@@ -1328,7 +1365,8 @@ body.site-shell a:hover {
 
 .home-hero-media figcaption {
     margin: 0;
-    padding: 16px 18px 18px;
+    padding: 8px 12px 10px;
+    text-align: center;
     font-size: 0.9rem;
     line-height: 1.55;
     color: var(--page-muted);
