@@ -1238,6 +1238,14 @@ body.site-shell a:hover {
     padding: 28px;
 }
 
+.site-page .culture-values-grid {
+    align-items: stretch;
+}
+
+.site-page .culture-values-grid .page-card {
+    height: 100%;
+}
+
 .site-page .culture-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));

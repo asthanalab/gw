@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v95';
+const staticCacheName = 'site-static-v96';
 const assets = [
     './',
     './index.html',
@@ -19,11 +19,11 @@ const assets = [
     './sitemap.xml',
     './style.css',
     './pages.css',
-    './pages.css?v=20260913-4',
+    './pages.css?v=20260913-5',
     './research.css',
-    './research.css?v=20260913-3',
+    './research.css?v=20260913-4',
     './assets/js/app.js',
-    './assets/js/app.js?v=95',
+    './assets/js/app.js?v=96',
     './assets/js/news.js',
     './assets/img/logoUND.jpeg'
 ];
