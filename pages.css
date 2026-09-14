@@ -1828,7 +1828,7 @@ body.site-shell a:hover {
 @media (max-width: 767.98px) {
     .site-nav {
         width: min(100vw - 32px, 1120px);
-        padding-top: 22px;
+        padding-top: 68px;
     }
 
     .site-nav .site-nav-list {
@@ -1982,12 +1982,41 @@ body.site-shell a:hover {
 
     .menu-wrap {
         position: fixed !important;
-        top: max(16px, env(safe-area-inset-top)) !important;
+        top: max(14px, env(safe-area-inset-top)) !important;
         right: 16px !important;
         bottom: auto !important;
         left: auto !important;
         z-index: 120 !important;
         display: block !important;
+    }
+
+    .menu-wrap::before {
+        content: "Asthana Group";
+        position: fixed;
+        top: max(18px, env(safe-area-inset-top));
+        left: 18px;
+        z-index: 121;
+        color: var(--page-text);
+        font-family: "CircularStd", sans-serif;
+        font-size: 1.08rem;
+        font-weight: 700;
+        letter-spacing: 0.015em;
+        line-height: 1;
+        pointer-events: none;
+    }
+
+    .menu-wrap::after {
+        content: "QUANTUM CHEMISTRY AND QUANTUM COMPUTING";
+        position: fixed;
+        top: max(42px, calc(env(safe-area-inset-top) + 24px));
+        left: 18px;
+        z-index: 121;
+        color: var(--page-accent);
+        font-size: 0.48rem;
+        font-weight: 700;
+        letter-spacing: 0.13em;
+        line-height: 1;
+        pointer-events: none;
     }
 
     .menu-wrap .toggler,
@@ -1999,54 +2028,159 @@ body.site-shell a:hover {
         left: auto !important;
     }
 
+    .menu-wrap .toggler {
+        z-index: 122;
+        width: 82px;
+        height: 42px;
+        color: var(--page-text);
+        font-size: 0;
+        opacity: 1;
+    }
+
+    .menu-wrap .toggler::before {
+        content: "menu";
+        position: absolute;
+        top: 50%;
+        left: 4px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        line-height: 1;
+        text-transform: uppercase;
+        transform: translateY(-50%);
+    }
+
+    .menu-wrap.is-open .toggler::before {
+        content: "close";
+    }
+
+    .menu-wrap .hamburger {
+        width: 82px;
+        height: 42px;
+        padding: 0 7px 0 57px;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .menu-wrap .hamburger > div,
+    .menu-wrap .hamburger > div::before {
+        height: 1.5px;
+    }
+
+    .menu-wrap .hamburger > div::before {
+        top: -6px;
+    }
+
+    .menu-wrap .hamburger > div::after {
+        display: none;
+    }
+
     .menu-wrap .menu {
         z-index: 119;
         display: flex !important;
-        align-items: center !important;
-        justify-content: flex-end !important;
+        align-items: stretch !important;
+        justify-content: stretch !important;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
 
     .menu-wrap .menu > div {
+        position: relative;
         box-sizing: border-box;
         width: 100vw;
-        height: 100vh;
-        min-height: 100vh;
+        height: 100dvh;
+        min-height: 100dvh;
         border-radius: 0;
-        padding: 88px 24px 36px;
-        justify-content: flex-end;
+        padding: 96px 24px 72px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background:
+            radial-gradient(80% 55% at 100% 0%, rgba(31, 79, 216, 0.12), transparent 72%),
+            rgba(255, 255, 255, 0.985);
+        transform: translateX(100%);
+        transition: transform 0.42s cubic-bezier(0.77, 0, 0.18, 1);
+    }
+
+    .menu-wrap.is-open .menu > div {
+        transform: translateX(0);
+    }
+
+    .menu-wrap .menu > div::before {
+        content: "Explore";
+        position: absolute;
+        top: 76px;
+        left: 24px;
+        color: var(--page-accent);
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+    }
+
+    .menu-wrap .menu > div::after {
+        content: "Quantum chemistry and quantum computing";
+        position: absolute;
+        right: 24px;
+        bottom: max(24px, env(safe-area-inset-bottom));
+        left: 24px;
+        color: var(--page-subtle);
+        font-size: 0.68rem;
+        letter-spacing: 0.04em;
+    }
+
+    .research-site .menu-wrap .menu > div::after {
+        content: "Theoretical chemistry and quantum computing";
     }
 
     .menu-wrap .menu > div > div {
         box-sizing: border-box;
-        width: min(100%, 360px);
-        max-width: 360px;
-        max-height: calc(100vh - 124px);
-        margin: 0 0 0 auto;
+        width: 100%;
+        max-width: none;
+        max-height: calc(100dvh - 168px);
+        margin: 0;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
-        text-align: right !important;
+        text-align: left !important;
     }
 
     .menu-wrap .menu > div > div > ul {
         display: grid;
-        gap: 12px;
-        padding-bottom: 20px;
-        justify-items: end;
+        gap: 0;
+        padding-bottom: 16px;
+        justify-items: stretch;
     }
 
     .menu-wrap .menu > div > div > ul > li {
+        position: relative;
         width: 100%;
-        text-align: right;
+        border-bottom: 1px solid rgba(31, 79, 216, 0.13);
+        text-align: left;
     }
 
     .menu-wrap .menu > div > div > ul > li > a {
         display: block;
         width: 100%;
-        padding: 8px 0;
-        font-size: 1.05rem;
-        text-align: right;
+        padding: 10px 0;
+        color: var(--page-text) !important;
+        font-family: "CircularStd", sans-serif;
+        font-size: clamp(1.42rem, 6.5vw, 1.86rem);
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        line-height: 1.12;
+        text-align: left;
+        transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .menu-wrap .menu > div > div > ul > li > a:hover,
+    .menu-wrap .menu > div > div > ul > li > a:focus-visible {
+        color: var(--page-accent) !important;
+        transform: translateX(4px);
+    }
+
+    .menu-wrap .menu > div > div > ul > li > a[aria-current="page"] {
+        color: var(--page-accent) !important;
     }
 
     .site-page .person-card {
