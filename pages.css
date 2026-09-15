@@ -1240,6 +1240,7 @@ body.site-shell a:hover {
 
 .site-page .culture-values-grid {
     align-items: stretch;
+    grid-auto-rows: 1fr;
 }
 
 .site-page .culture-values-grid .page-card {
