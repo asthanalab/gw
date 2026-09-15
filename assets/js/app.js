@@ -2,11 +2,16 @@
     const initializeMenu = () => {
         const wrapper = document.querySelector('.menu-wrap');
         if (!wrapper) return;
+        if (wrapper.dataset.menuInitialized === 'true') return;
+        wrapper.dataset.menuInitialized = 'true';
 
         const toggler = wrapper.querySelector('.toggler');
         const menu = wrapper.querySelector('.menu');
         const links = Array.from(wrapper.querySelectorAll('.menu a'));
         if (!toggler || !menu) return;
+
+        let openedAt = 0;
+        let lastToggleAt = 0;
 
         menu.id = menu.id || 'mobile-navigation';
         toggler.setAttribute('aria-controls', menu.id);
@@ -18,12 +23,30 @@
             menu.setAttribute('aria-hidden', String(!isOpen));
             document.body.classList.toggle('menu-open', isOpen);
 
-            if (isOpen && links.length) links[0].focus();
             if (!isOpen && returnFocus) toggler.focus();
         };
 
-        toggler.addEventListener('click', () => setOpen(!wrapper.classList.contains('is-open')));
-        links.forEach((link) => link.addEventListener('click', () => setOpen(false)));
+        toggler.addEventListener('click', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+
+            const now = performance.now();
+            if (now - lastToggleAt < 400) return;
+            lastToggleAt = now;
+
+            const willOpen = !wrapper.classList.contains('is-open');
+            setOpen(willOpen);
+            if (willOpen) openedAt = now;
+        });
+
+        links.forEach((link) => link.addEventListener('click', (event) => {
+            // Some mobile browsers can retarget the opening tap after the panel moves under it.
+            if (performance.now() - openedAt < 400) {
+                event.preventDefault();
+                return;
+            }
+            setOpen(false);
+        }));
 
         wrapper.addEventListener('keydown', (event) => {
             if (!wrapper.classList.contains('is-open')) return;
@@ -52,9 +75,15 @@
             }
         });
 
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 767 && wrapper.classList.contains('is-open')) setOpen(false);
-        });
+        const desktopQuery = window.matchMedia('(min-width: 768px)');
+        const handleBreakpointChange = (event) => {
+            if (event.matches && wrapper.classList.contains('is-open')) setOpen(false);
+        };
+        if (desktopQuery.addEventListener) {
+            desktopQuery.addEventListener('change', handleBreakpointChange);
+        } else {
+            desktopQuery.addListener(handleBreakpointChange);
+        }
 
         setOpen(false);
     };
@@ -67,7 +96,7 @@
 
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-            navigator.serviceWorker.register('./sw.js?v=98').catch(() => {});
+            navigator.serviceWorker.register('./sw.js?v=99').catch(() => {});
         });
     }
 })();
