@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v99';
+const staticCacheName = 'site-static-v100';
 const assets = [
     './',
     './index.html',
@@ -23,7 +23,7 @@ const assets = [
     './research.css',
     './research.css?v=20260913-4',
     './assets/js/app.js',
-    './assets/js/app.js?v=99',
+    './assets/js/app.js?v=100',
     './assets/js/news.js',
     './assets/img/logoUND.jpeg'
 ];
@@ -56,7 +56,7 @@ self.addEventListener('fetch', evt => {
 
     if (request.mode === 'navigate' || acceptsHtml) {
         evt.respondWith(
-            fetch(request)
+            fetch(request, { cache: 'no-store' })
                 .then(networkRes => {
                     const copy = networkRes.clone();
                     caches.open(staticCacheName).then(cache => cache.put(request, copy));

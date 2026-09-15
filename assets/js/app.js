@@ -96,7 +96,7 @@
 
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-            navigator.serviceWorker.register('./sw.js?v=99').catch(() => {});
+            navigator.serviceWorker.register('./sw.js?v=100', { updateViaCache: 'none' }).catch(() => {});
         });
     }
 })();
