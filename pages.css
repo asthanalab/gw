@@ -2030,7 +2030,7 @@ body.site-shell a:hover {
 
     .menu-wrap .toggler {
         z-index: 122;
-        width: 82px;
+        width: 62px;
         height: 42px;
         color: var(--page-text);
         font-size: 0;
@@ -2041,7 +2041,8 @@ body.site-shell a:hover {
         content: "menu";
         position: absolute;
         top: 50%;
-        left: 4px;
+        right: 0;
+        left: auto;
         font-size: 0.7rem;
         font-weight: 700;
         letter-spacing: 0.12em;
@@ -2055,13 +2056,7 @@ body.site-shell a:hover {
     }
 
     .menu-wrap .hamburger {
-        width: 82px;
-        height: 42px;
-        padding: 0 7px 0 57px;
-        border: 0;
-        border-radius: 0;
-        background: transparent;
-        box-shadow: none;
+        display: none !important;
     }
 
     .menu-wrap .hamburger > div,
@@ -2143,6 +2138,15 @@ body.site-shell a:hover {
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
         text-align: left !important;
+        opacity: 1;
+        transition: none;
+        transition-delay: 0s;
+    }
+
+    .menu-wrap.is-open .menu > div > div {
+        opacity: 1;
+        transition: none;
+        transition-delay: 0s;
     }
 
     .menu-wrap .menu > div > div > ul {
