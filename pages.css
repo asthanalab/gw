@@ -1568,6 +1568,17 @@ body.site-shell a:hover {
     content: none;
 }
 
+.site-page .join-pathway-grid,
+.site-page .join-skill-grid {
+    align-items: stretch;
+    grid-auto-rows: 1fr;
+}
+
+.site-page .join-pathway-grid .page-card,
+.site-page .join-skill-grid .page-card {
+    height: 100%;
+}
+
 .join-skill-grid .page-card p {
     margin-top: 12px;
 }
