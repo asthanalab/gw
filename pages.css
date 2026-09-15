@@ -2125,10 +2125,6 @@ body.site-shell a:hover {
         letter-spacing: 0.04em;
     }
 
-    .research-site .menu-wrap .menu > div::after {
-        content: "Theoretical chemistry and quantum computing";
-    }
-
     .menu-wrap .menu > div > div {
         box-sizing: border-box;
         width: 100%;
