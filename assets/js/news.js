@@ -44,6 +44,36 @@
         const latest = page.querySelector('.news-latest');
         const status = page.querySelector('[data-news-filter-status]');
 
+        // One-pixel grid rows let each card keep its natural height while the
+        // next update fills the first available space, in document order.
+        const latestList = latest?.querySelector('.news-list--latest');
+        const latestCards = latestList ? Array.from(latestList.querySelectorAll('.news-card')) : [];
+        let layoutFrame = 0;
+        const layoutLatest = () => {
+            layoutFrame = 0;
+            const sizes = latestCards.filter((card) => !card.hidden).map((card) => ({
+                card,
+                span: Math.ceil(card.getBoundingClientRect().height + 12)
+            }));
+            sizes.forEach(({ card, span }) => {
+                card.style.setProperty('--news-row-span', span);
+            });
+            latestList?.classList.add('is-masonry');
+        };
+        const scheduleLayout = () => {
+            if (!layoutFrame) layoutFrame = requestAnimationFrame(layoutLatest);
+        };
+        if (latestList && 'ResizeObserver' in window) {
+            const observer = new ResizeObserver(scheduleLayout);
+            latestCards.forEach((card) => observer.observe(card));
+        }
+        window.addEventListener('resize', scheduleLayout);
+        latestList?.querySelectorAll('img').forEach((image) => {
+            image.addEventListener('load', scheduleLayout);
+            image.addEventListener('error', scheduleLayout);
+        });
+        document.fonts?.ready.then(scheduleLayout);
+
         if (controls) controls.hidden = false;
 
         archiveYears.forEach((year) => {
@@ -86,6 +116,7 @@
                     ? `${visibleCount} updates, newest first.`
                     : `${visibleCount} matching update${visibleCount === 1 ? '' : 's'}.`;
             }
+            scheduleLayout();
         };
 
         buttons.forEach((button) => {
