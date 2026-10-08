@@ -2266,6 +2266,18 @@ body.site-shell a:hover {
     font-weight: 700;
 }
 
+.publication-corresponding-note {
+    margin: 6px 0 0;
+    color: var(--page-muted);
+    font-size: 0.9rem;
+}
+
+.publication-authors sup,
+.publication-corresponding-note sup {
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
 .opportunity-link a,
 .outputs-collaboration-link a {
     display: inline-flex;
