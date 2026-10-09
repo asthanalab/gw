@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <title>Two-component spin–orbit coupled-cluster calculations</title>
+  <desc>A conceptual thallium atom and unscaled 2P spin–orbit splitting diagram, reflecting a benchmark system in the paper.</desc>
+  <defs>
+    <radialGradient id="tl" cx="30%" cy="25%"><stop stop-color="#b9ccee"/><stop offset=".5" stop-color="#6e8ec1"/><stop offset="1" stop-color="#3c577f"/></radialGradient>
+  </defs>
+  <rect width="640" height="480" fill="white"/>
+  <g transform="translate(174 227)" fill="none" stroke="#d9e5ef" stroke-width="3"><ellipse rx="130" ry="76"/><ellipse rx="130" ry="76" transform="rotate(60)"/><ellipse rx="130" ry="76" transform="rotate(-60)"/></g>
+  <circle cx="174" cy="227" r="66" fill="url(#tl)"/>
+  <text x="174" y="241" font-family="Arial, sans-serif" font-size="40" text-anchor="middle" fill="white">Tl</text>
+  <circle cx="296" cy="201" r="10" fill="#368caa"/>
+  <circle cx="108" cy="125" r="10" fill="#846bbc"/>
+  <path d="M333 240H395M395 240L448 150M395 240L448 322" fill="none" stroke="#aebdd0" stroke-width="3"/>
+  <path d="M448 150H588" stroke="#7b65b0" stroke-width="5"/><path d="M448 322H588" stroke="#3c90a9" stroke-width="5"/>
+  <g font-family="Arial, sans-serif" font-size="29" text-anchor="middle" fill="#34465d"><text x="364" y="220">²P</text><text x="518" y="128">²P₃/₂</text><text x="518" y="364">²P₁/₂</text></g>
+  <path d="M609 165V306M602 165H616M602 306H616" stroke="#bbc9d7" stroke-width="2"/>
+  <text x="320" y="61" font-family="Arial, sans-serif" font-size="27" text-anchor="middle" fill="#34465d">Spin–orbit splitting</text>
+  <text x="320" y="437" font-family="Arial, sans-serif" font-size="25" text-anchor="middle" fill="#34465d">Two-component CCSD(T)</text>
+</svg>

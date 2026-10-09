@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <title>Physics-informed neural networks for quantum wavefunctions</title>
+  <desc>Conceptual diagram of a neural network learning a wavefunction with a physical constraint. No numerical results are depicted.</desc>
+  <defs>
+    <linearGradient id="wave" x1="0" x2="1"><stop stop-color="#246ab3"/><stop offset="1" stop-color="#7752ba"/></linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#77b2e4"/><stop offset="1" stop-color="#2460a1"/></linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#667b91" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="640" height="480" fill="white"/>
+  <g stroke="#d8e2ee" stroke-width="3">
+    <path d="M79 163L163 121M79 163L163 219M79 163L163 316M79 275L163 121M79 275L163 219M79 275L163 316"/>
+    <path d="M163 121L248 163M163 121L248 275M163 219L248 163M163 219L248 275M163 316L248 163M163 316L248 275M248 163L326 219M248 275L326 219"/>
+  </g>
+  <g fill="url(#node)" stroke="white" stroke-width="4"><circle cx="79" cy="163" r="20"/><circle cx="79" cy="275" r="20"/><circle cx="163" cy="121" r="20"/><circle cx="163" cy="219" r="20"/><circle cx="163" cy="316" r="20"/><circle cx="248" cy="163" r="20"/><circle cx="248" cy="275" r="20"/></g>
+  <circle cx="326" cy="219" r="22" fill="#7656bc" stroke="white" stroke-width="4"/>
+  <path d="M357 219H393" stroke="#667b91" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M415 157V293H596" fill="none" stroke="#c7d4e1" stroke-width="3"/>
+  <path d="M419 268C437 268 439 259 452 260C466 262 469 151 493 160C518 171 515 312 539 281C559 254 561 265 592 266" fill="none" stroke="url(#wave)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M437 269C454 271 458 251 470 238C481 226 493 207 507 218C532 238 540 273 577 269" fill="none" stroke="#8bc6c5" stroke-width="3" stroke-dasharray="6 6"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#263d57"><text x="205" y="76" font-size="26">Neural network</text><text x="511" y="118" font-size="30" font-style="italic">ψ</text></g>
+  <rect x="102" y="372" width="436" height="58" rx="15" fill="#f0f6fb" stroke="#dce8f1" stroke-width="2"/>
+  <text x="320" y="409" font-family="Arial, sans-serif" font-size="23" text-anchor="middle" fill="#315b7a">Schrödinger equation · constraints</text>
+</svg>

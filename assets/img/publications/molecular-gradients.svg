@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <title>Relativistic molecular gradients for radium molecules</title>
+  <desc>Conceptual ball-and-stick models of RaNH2 and RaOCH3 above an unscaled equilibrium-geometry schematic. Bond lengths are not to scale.</desc>
+  <defs>
+    <radialGradient id="ra" cx="30%" cy="25%"><stop stop-color="#a8baf6"/><stop offset=".5" stop-color="#6579cd"/><stop offset="1" stop-color="#34468c"/></radialGradient>
+    <radialGradient id="n" cx="30%" cy="25%"><stop stop-color="#9bcff2"/><stop offset="1" stop-color="#296caf"/></radialGradient>
+    <radialGradient id="o" cx="30%" cy="25%"><stop stop-color="#f7b8b3"/><stop offset="1" stop-color="#bd545b"/></radialGradient>
+    <radialGradient id="c" cx="30%" cy="25%"><stop stop-color="#c7d0d8"/><stop offset="1" stop-color="#566778"/></radialGradient>
+    <radialGradient id="h" cx="30%" cy="25%"><stop stop-color="white"/><stop offset="1" stop-color="#c5d0da"/></radialGradient>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0L7 3L0 6" fill="#278f8b"/></marker>
+  </defs>
+  <rect width="640" height="480" fill="white"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#34465d" font-size="26"><text x="172" y="63">RaNH₂</text><text x="461" y="63">RaOCH₃</text></g>
+  <path d="M93 160H189M189 160L246 112M189 160L246 211M367 160H442L499 174M499 174L544 122M499 174L563 208M499 174L483 230" fill="none" stroke="#afbdce" stroke-width="12" stroke-linecap="round"/>
+  <g stroke="white" stroke-width="3"><circle cx="93" cy="160" r="48" fill="url(#ra)"/><circle cx="189" cy="160" r="29" fill="url(#n)"/><circle cx="246" cy="112" r="20" fill="url(#h)"/><circle cx="246" cy="211" r="20" fill="url(#h)"/><circle cx="367" cy="160" r="48" fill="url(#ra)"/><circle cx="442" cy="160" r="26" fill="url(#o)"/><circle cx="499" cy="174" r="25" fill="url(#c)"/><circle cx="544" cy="122" r="18" fill="url(#h)"/><circle cx="563" cy="208" r="18" fill="url(#h)"/><circle cx="483" cy="230" r="18" fill="url(#h)"/></g>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="white" font-size="25"><text x="93" y="169">Ra</text><text x="189" y="169">N</text><text x="367" y="169">Ra</text><text x="442" y="169">O</text><text x="499" y="183">C</text></g>
+  <path d="M160 286C211 414 414 414 477 286" fill="none" stroke="#596fa7" stroke-width="5"/>
+  <path d="M207 298L247 332M431 298L392 331" stroke="#278f8b" stroke-width="4" marker-end="url(#arrow)"/>
+  <circle cx="319" cy="382" r="8" fill="#278f8b"/>
+  <text x="320" y="445" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#34465d">Equilibrium geometry &amp; vibrations</text>
+</svg>

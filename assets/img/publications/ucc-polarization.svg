@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <title>Unitary coupled-cluster polarization propagator</title>
+  <desc>Conceptual water molecule, Hermitian matrix, and unscaled excitation levels for the UCC3 polarization-propagator method.</desc>
+  <defs>
+    <radialGradient id="o" cx="30%" cy="25%"><stop stop-color="#f1a2a4"/><stop offset="1" stop-color="#b44055"/></radialGradient>
+    <radialGradient id="h" cx="30%" cy="25%"><stop stop-color="white"/><stop offset="1" stop-color="#bccbda"/></radialGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#597890" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="640" height="480" fill="white"/>
+  <text x="320" y="68" font-family="Arial, sans-serif" font-size="30" text-anchor="middle" fill="#34465d">UCC3</text>
+  <path d="M66 188L134 241L202 188" fill="none" stroke="#bcc8d4" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="134" cy="241" r="48" fill="url(#o)"/><circle cx="66" cy="188" r="27" fill="url(#h)" stroke="white" stroke-width="3"/><circle cx="202" cy="188" r="27" fill="url(#h)" stroke="white" stroke-width="3"/>
+  <path d="M213 244H258M413 244H453" stroke="#597890" stroke-width="3" marker-end="url(#arrow)"/>
+  <g transform="translate(278 171)"><path d="M4 0H-7V144H4M130 0H141V144H130" fill="none" stroke="#45627d" stroke-width="3"/>
+    <rect x="12" y="10" width="30" height="30" rx="5" fill="#428e9d"/><rect x="52" y="10" width="30" height="30" rx="5" fill="#bbd7e0"/><rect x="92" y="10" width="30" height="30" rx="5" fill="#e1d9ee"/>
+    <rect x="12" y="51" width="30" height="30" rx="5" fill="#bbd7e0"/><rect x="52" y="51" width="30" height="30" rx="5" fill="#5b91b3"/><rect x="92" y="51" width="30" height="30" rx="5" fill="#d0c3e6"/>
+    <rect x="12" y="92" width="30" height="30" rx="5" fill="#e1d9ee"/><rect x="52" y="92" width="30" height="30" rx="5" fill="#d0c3e6"/><rect x="92" y="92" width="30" height="30" rx="5" fill="#8469b7"/>
+  </g>
+  <path d="M483 305H588M483 218H588M483 142H588" stroke="#647b99" stroke-width="5"/>
+  <path d="M513 286V238M557 286V163" stroke="#498e9f" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="320" y="426" font-family="Arial, sans-serif" font-size="25" text-anchor="middle" fill="#34465d">Hermitian excited-state theory</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <title>Exact two-component calculations of molecular excited states</title>
+  <desc>Conceptual Bi2 and I3-minus molecules with an unscaled excited-state energy diagram, representing the systems studied in the paper.</desc>
+  <defs>
+    <radialGradient id="bi" cx="30%" cy="25%"><stop stop-color="#c4b8ed"/><stop offset=".5" stop-color="#8b74c5"/><stop offset="1" stop-color="#554087"/></radialGradient>
+    <radialGradient id="i" cx="30%" cy="25%"><stop stop-color="#cfb0df"/><stop offset="1" stop-color="#805c9f"/></radialGradient>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0L7 3L0 6" fill="#3d91ab"/></marker>
+  </defs>
+  <rect width="640" height="480" fill="white"/>
+  <path d="M109 155H255M79 329H283" stroke="#bcc8d4" stroke-width="15" stroke-linecap="round"/>
+  <g stroke="white" stroke-width="3"><circle cx="109" cy="155" r="51" fill="url(#bi)"/><circle cx="255" cy="155" r="51" fill="url(#bi)"/><circle cx="79" cy="329" r="33" fill="url(#i)"/><circle cx="181" cy="329" r="33" fill="url(#i)"/><circle cx="283" cy="329" r="33" fill="url(#i)"/></g>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="white" font-size="27"><text x="109" y="164">Bi</text><text x="255" y="164">Bi</text><text x="79" y="338">I</text><text x="181" y="338">I</text><text x="283" y="338">I</text></g>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#34465d" font-size="25"><text x="182" y="78">Bi₂</text><text x="181" y="265">I₃⁻</text></g>
+  <path d="M407 98V359" stroke="#e2e9ef" stroke-width="3"/>
+  <path d="M428 351H584" stroke="#3f5878" stroke-width="5"/><path d="M428 228H584" stroke="#3d91ab" stroke-width="5"/><path d="M428 125H584" stroke="#7b68b8" stroke-width="5"/>
+  <path d="M466 331V249M529 331V146" stroke="#3d91ab" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="320" y="440" font-family="Arial, sans-serif" font-size="25" text-anchor="middle" fill="#34465d">X2C · molecular excitation energies</text>
+</svg>

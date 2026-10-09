@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <title>Relativistic electric properties of heavy-element molecules</title>
+  <desc>Schematic YbF molecule with an electric dipole arrow and a conceptual electric-field-gradient motif. No numerical values are shown.</desc>
+  <defs>
+    <radialGradient id="yb" cx="30%" cy="25%"><stop stop-color="#b4ccf7"/><stop offset=".5" stop-color="#6892cf"/><stop offset="1" stop-color="#315685"/></radialGradient>
+    <radialGradient id="f" cx="30%" cy="25%"><stop stop-color="#b9e6cc"/><stop offset=".5" stop-color="#62b594"/><stop offset="1" stop-color="#247657"/></radialGradient>
+    <linearGradient id="bond"><stop stop-color="#677b92"/><stop offset=".5" stop-color="#d5e0e9"/><stop offset="1" stop-color="#8198a3"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#2a8c86" stroke-width="2"/></marker>
+  </defs>
+  <rect width="640" height="480" fill="white"/>
+  <g fill="none" stroke="#dbe7f1" stroke-width="2"><ellipse cx="223" cy="244" rx="98" ry="153"/><ellipse cx="223" cy="244" rx="143" ry="110"/><ellipse cx="223" cy="244" rx="154" ry="66"/></g>
+  <path d="M172 87H440" stroke="#2a8c86" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="304" y="67" font-family="Georgia, serif" font-size="35" text-anchor="middle" fill="#247b76" font-style="italic">μ</text>
+  <path d="M223 244H445" stroke="url(#bond)" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="223" cy="244" r="83" fill="url(#yb)" stroke="white" stroke-width="4"/><circle cx="445" cy="244" r="47" fill="url(#f)" stroke="white" stroke-width="4"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="white"><text x="223" y="258" font-size="39">Yb</text><text x="445" y="257" font-size="34">F</text></g>
+  <text x="320" y="434" font-family="Arial, sans-serif" font-size="25" text-anchor="middle" fill="#34465d">Dipole moments · field gradients</text>
+</svg>
