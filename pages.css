@@ -1590,40 +1590,6 @@ body.site-shell a:hover {
     color: var(--page-accent-strong);
 }
 
-.funding-total-strip {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-    align-items: stretch;
-    margin-top: 8px;
-}
-
-.funding-total-strip > div {
-    display: flex;
-    min-width: 0;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 4px 0;
-}
-
-.funding-total-value {
-    margin: 6px 0 0;
-    font-family: "CircularStd", sans-serif;
-    font-size: clamp(1.75rem, 3.2vw, 2.45rem);
-    font-weight: 700;
-    line-height: 1.05;
-    color: var(--page-text);
-    overflow-wrap: anywhere;
-}
-
-.funding-total-label {
-    margin: 0;
-    color: var(--page-muted);
-    font-size: 0.92rem;
-    line-height: 1.55;
-}
-
 .funding-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
@@ -1686,7 +1652,8 @@ body.site-shell a:hover {
     max-height: 18px;
 }
 
-.funding-agency-logo--nsf {
+.funding-agency-logo--nsf,
+.funding-agency-logo--doe {
     width: 28px;
     height: 28px;
 }
@@ -1712,6 +1679,10 @@ body.site-shell a:hover {
     border: 1px solid #e7ebf4;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.82);
+}
+
+.funding-meta-grid > div:last-child {
+    grid-column: 1 / -1;
 }
 
 .funding-meta-grid span,
@@ -1789,11 +1760,6 @@ body.site-shell a:hover {
 
     .home-thrust-grid,
     .outputs-feature-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .funding-total-strip,
-    .funding-meta-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -1911,7 +1877,6 @@ body.site-shell a:hover {
         grid-template-columns: 1fr;
     }
 
-    .funding-total-strip,
     .funding-meta-grid {
         grid-template-columns: 1fr;
     }
@@ -1940,7 +1905,8 @@ body.site-shell a:hover {
         max-height: 16px;
     }
 
-    .funding-agency-logo--nsf {
+    .funding-agency-logo--nsf,
+    .funding-agency-logo--doe {
         width: 26px;
         height: 26px;
     }
