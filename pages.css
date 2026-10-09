@@ -1681,7 +1681,7 @@ body.site-shell a:hover {
     background: rgba(255, 255, 255, 0.82);
 }
 
-.funding-meta-grid > div:last-child {
+.funding-meta-grid > div:nth-child(odd):last-child {
     grid-column: 1 / -1;
 }
 
