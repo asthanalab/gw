@@ -1,0 +1,1004 @@
+{
+  "version": 1,
+  "assets": {
+    "assets/img/web/230817-ayush-asthana-web-224-aa9b258ab9.webp": {
+      "source": "assets/img/230817-ayush-asthana-web.jpg",
+      "width": 224,
+      "height": 268,
+      "bytes": 8456,
+      "options": {
+        "width": 224,
+        "quality": 82
+      }
+    },
+    "assets/img/web/230817-ayush-asthana-web-336-31d567035d.webp": {
+      "source": "assets/img/230817-ayush-asthana-web.jpg",
+      "width": 336,
+      "height": 402,
+      "bytes": 17738,
+      "options": {
+        "width": 336,
+        "quality": 82
+      }
+    },
+    "assets/img/web/4-1200-cd710b37b0.jpg": {
+      "source": "assets/img/4.png",
+      "width": 1200,
+      "height": 800,
+      "bytes": 97675,
+      "options": {
+        "width": 1200,
+        "quality": 80,
+        "format": "jpg"
+      }
+    },
+    "assets/img/web/4-480-e579dfd90f.webp": {
+      "source": "assets/img/4.png",
+      "width": 480,
+      "height": 320,
+      "bytes": 42358,
+      "options": {
+        "width": 480,
+        "quality": 86
+      }
+    },
+    "assets/img/web/4-960-6febd005e1.webp": {
+      "source": "assets/img/4.png",
+      "width": 960,
+      "height": 640,
+      "bytes": 128596,
+      "options": {
+        "width": 960,
+        "quality": 86
+      }
+    },
+    "assets/img/web/funding-arpa-e-logo-216-c4e858e47b.webp": {
+      "source": "assets/img/funding/arpa-e-logo.png",
+      "width": 216,
+      "height": 48,
+      "bytes": 7248,
+      "options": {
+        "width": 216,
+        "quality": 90
+      }
+    },
+    "assets/img/web/funding-doe-seal-112-35fdddaa36.webp": {
+      "source": "assets/img/funding/doe-seal.svg",
+      "width": 112,
+      "height": 112,
+      "bytes": 7202,
+      "options": {
+        "width": 112,
+        "quality": 90
+      }
+    },
+    "assets/img/web/funding-nsf-logo-112-572dc3e533.webp": {
+      "source": "assets/img/funding/nsf-logo.svg",
+      "width": 112,
+      "height": 112,
+      "bytes": 6922,
+      "options": {
+        "width": 112,
+        "quality": 90
+      }
+    },
+    "assets/img/web/logoUND-1200-ffe4900066.jpg": {
+      "source": "assets/img/logoUND.jpeg",
+      "width": 600,
+      "height": 250,
+      "bytes": 6307,
+      "options": {
+        "width": 1200,
+        "quality": 80,
+        "format": "jpg"
+      }
+    },
+    "assets/img/web/logoUND-180-12f8adb4f8.png": {
+      "source": "assets/img/logoUND.jpeg",
+      "width": 180,
+      "height": 180,
+      "bytes": 2722,
+      "options": {
+        "width": 180,
+        "format": "png",
+        "square": true
+      }
+    },
+    "assets/img/web/logoUND-192-fabc4a8657.png": {
+      "source": "assets/img/logoUND.jpeg",
+      "width": 192,
+      "height": 192,
+      "bytes": 2928,
+      "options": {
+        "width": 192,
+        "format": "png",
+        "square": true
+      }
+    },
+    "assets/img/web/logoUND-512-8462274bc6.png": {
+      "source": "assets/img/logoUND.jpeg",
+      "width": 512,
+      "height": 512,
+      "bytes": 10771,
+      "options": {
+        "width": 512,
+        "format": "png",
+        "square": true
+      }
+    },
+    "assets/img/web/logoUND-64-afec0f0829.png": {
+      "source": "assets/img/logoUND.jpeg",
+      "width": 64,
+      "height": 64,
+      "bytes": 1258,
+      "options": {
+        "width": 64,
+        "format": "png",
+        "square": true
+      }
+    },
+    "assets/img/web/optimized-bday1-1200-360-395ba81d89.webp": {
+      "source": "assets/img/optimized/bday1-1200.jpg",
+      "width": 360,
+      "height": 270,
+      "bytes": 9650,
+      "options": {
+        "width": 360,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-bday1-1200-720-dc7496cd0e.webp": {
+      "source": "assets/img/optimized/bday1-1200.jpg",
+      "width": 720,
+      "height": 540,
+      "bytes": 28094,
+      "options": {
+        "width": 720,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-bday1-1200-960-9dcc314e77.webp": {
+      "source": "assets/img/optimized/bday1-1200.jpg",
+      "width": 960,
+      "height": 720,
+      "bytes": 43546,
+      "options": {
+        "width": 960,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-bday2-1200-360-68ec77888b.webp": {
+      "source": "assets/img/optimized/bday2-1200.jpg",
+      "width": 360,
+      "height": 270,
+      "bytes": 9300,
+      "options": {
+        "width": 360,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-bday2-1200-720-7768ab055e.webp": {
+      "source": "assets/img/optimized/bday2-1200.jpg",
+      "width": 720,
+      "height": 540,
+      "bytes": 27056,
+      "options": {
+        "width": 720,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-bday2-1200-960-338cf45195.webp": {
+      "source": "assets/img/optimized/bday2-1200.jpg",
+      "width": 960,
+      "height": 720,
+      "bytes": 41020,
+      "options": {
+        "width": 960,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-catan-1200-360-748176610d.webp": {
+      "source": "assets/img/optimized/catan-1200.jpg",
+      "width": 360,
+      "height": 270,
+      "bytes": 15304,
+      "options": {
+        "width": 360,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-catan-1200-720-0df1a513c8.webp": {
+      "source": "assets/img/optimized/catan-1200.jpg",
+      "width": 720,
+      "height": 540,
+      "bytes": 41888,
+      "options": {
+        "width": 720,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-catan-1200-960-20d147381b.webp": {
+      "source": "assets/img/optimized/catan-1200.jpg",
+      "width": 960,
+      "height": 720,
+      "bytes": 62354,
+      "options": {
+        "width": 960,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-catan-scoreboard-1400-360-94fbc649d7.webp": {
+      "source": "assets/img/optimized/catan-scoreboard-1400.jpg",
+      "width": 360,
+      "height": 480,
+      "bytes": 27168,
+      "options": {
+        "width": 360,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-catan-scoreboard-1400-720-bae8accdb7.webp": {
+      "source": "assets/img/optimized/catan-scoreboard-1400.jpg",
+      "width": 720,
+      "height": 960,
+      "bytes": 70670,
+      "options": {
+        "width": 720,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-catan-scoreboard-1400-960-5e1673c67b.webp": {
+      "source": "assets/img/optimized/catan-scoreboard-1400.jpg",
+      "width": 960,
+      "height": 1280,
+      "bytes": 102760,
+      "options": {
+        "width": 960,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-gpAPS-1200-480-ef607dfd06.webp": {
+      "source": "assets/img/optimized/gpAPS-1200.jpg",
+      "width": 480,
+      "height": 360,
+      "bytes": 35476,
+      "options": {
+        "width": 480,
+        "quality": 80
+      }
+    },
+    "assets/img/web/optimized-gpAPS-1200-720-38f4dc1521.webp": {
+      "source": "assets/img/optimized/gpAPS-1200.jpg",
+      "width": 720,
+      "height": 540,
+      "bytes": 71426,
+      "options": {
+        "width": 720,
+        "quality": 80
+      }
+    },
+    "assets/img/web/optimized-group-photo-2026-1200-9ab34e94d2.jpg": {
+      "source": "assets/img/optimized/group-photo-2026.jpg",
+      "width": 1200,
+      "height": 900,
+      "bytes": 193793,
+      "options": {
+        "width": 1200,
+        "quality": 80,
+        "format": "jpg"
+      }
+    },
+    "assets/img/web/optimized-group-photo-2026-1280-2efd3de8a3.webp": {
+      "source": "assets/img/optimized/group-photo-2026.jpg",
+      "width": 1280,
+      "height": 960,
+      "bytes": 172616,
+      "options": {
+        "width": 1280,
+        "quality": 78
+      }
+    },
+    "assets/img/web/optimized-group-photo-2026-480-7401c9a422.webp": {
+      "source": "assets/img/optimized/group-photo-2026.jpg",
+      "width": 480,
+      "height": 360,
+      "bytes": 33818,
+      "options": {
+        "width": 480,
+        "quality": 78
+      }
+    },
+    "assets/img/web/optimized-group-photo-2026-480-9a8e223452.webp": {
+      "source": "assets/img/optimized/group-photo-2026.jpg",
+      "width": 480,
+      "height": 360,
+      "bytes": 23210,
+      "options": {
+        "width": 480,
+        "quality": 52
+      }
+    },
+    "assets/img/web/optimized-group-photo-2026-840-25b18b5811.webp": {
+      "source": "assets/img/optimized/group-photo-2026.jpg",
+      "width": 840,
+      "height": 630,
+      "bytes": 86898,
+      "options": {
+        "width": 840,
+        "quality": 78
+      }
+    },
+    "assets/img/web/optimized-group24_24-1400-360-04b4679264.webp": {
+      "source": "assets/img/optimized/group24_24-1400.jpg",
+      "width": 360,
+      "height": 197,
+      "bytes": 12720,
+      "options": {
+        "width": 360,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-group24_24-1400-720-62c61ceb97.webp": {
+      "source": "assets/img/optimized/group24_24-1400.jpg",
+      "width": 720,
+      "height": 395,
+      "bytes": 40830,
+      "options": {
+        "width": 720,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-group24_24-1400-960-526870e0b8.webp": {
+      "source": "assets/img/optimized/group24_24-1400.jpg",
+      "width": 960,
+      "height": 527,
+      "bytes": 64134,
+      "options": {
+        "width": 960,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-group24-1600-v2-360-3b1163ec2b.webp": {
+      "source": "assets/img/optimized/group24-1600-v2.jpg",
+      "width": 360,
+      "height": 270,
+      "bytes": 17868,
+      "options": {
+        "width": 360,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-group24-1600-v2-720-7be56fa026.webp": {
+      "source": "assets/img/optimized/group24-1600-v2.jpg",
+      "width": 720,
+      "height": 540,
+      "bytes": 64418,
+      "options": {
+        "width": 720,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-group24-1600-v2-960-aa431668bc.webp": {
+      "source": "assets/img/optimized/group24-1600-v2.jpg",
+      "width": 960,
+      "height": 720,
+      "bytes": 109574,
+      "options": {
+        "width": 960,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-groupacs-1200-360-51d95f3cdf.webp": {
+      "source": "assets/img/optimized/groupacs-1200.jpg",
+      "width": 360,
+      "height": 270,
+      "bytes": 15438,
+      "options": {
+        "width": 360,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-groupacs-1200-720-30039f6dcf.webp": {
+      "source": "assets/img/optimized/groupacs-1200.jpg",
+      "width": 720,
+      "height": 540,
+      "bytes": 49866,
+      "options": {
+        "width": 720,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-groupacs-1200-960-fb27e5556d.webp": {
+      "source": "assets/img/optimized/groupacs-1200.jpg",
+      "width": 960,
+      "height": 720,
+      "bytes": 76048,
+      "options": {
+        "width": 960,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-grp2-1200-360-3bc047876d.webp": {
+      "source": "assets/img/optimized/grp2-1200.jpg",
+      "width": 360,
+      "height": 270,
+      "bytes": 14844,
+      "options": {
+        "width": 360,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-grp2-1200-720-c6e2eaf5a4.webp": {
+      "source": "assets/img/optimized/grp2-1200.jpg",
+      "width": 720,
+      "height": 540,
+      "bytes": 46026,
+      "options": {
+        "width": 720,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-grp2-1200-960-e677a6e814.webp": {
+      "source": "assets/img/optimized/grp2-1200.jpg",
+      "width": 960,
+      "height": 720,
+      "bytes": 71104,
+      "options": {
+        "width": 960,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-hansika-700-224-5768d5e3c4.webp": {
+      "source": "assets/img/optimized/hansika-700.jpg",
+      "width": 224,
+      "height": 399,
+      "bytes": 12250,
+      "options": {
+        "width": 224,
+        "quality": 82
+      }
+    },
+    "assets/img/web/optimized-hansika-700-336-58b82185c4.webp": {
+      "source": "assets/img/optimized/hansika-700.jpg",
+      "width": 336,
+      "height": 598,
+      "bytes": 20504,
+      "options": {
+        "width": 336,
+        "quality": 82
+      }
+    },
+    "assets/img/web/optimized-Mushir-700-224-a601293e61.webp": {
+      "source": "assets/img/optimized/Mushir-700.jpg",
+      "width": 224,
+      "height": 199,
+      "bytes": 6092,
+      "options": {
+        "width": 224,
+        "quality": 82
+      }
+    },
+    "assets/img/web/optimized-Mushir-700-336-d2d5f6ff6f.webp": {
+      "source": "assets/img/optimized/Mushir-700.jpg",
+      "width": 336,
+      "height": 299,
+      "bytes": 10844,
+      "options": {
+        "width": 336,
+        "quality": 82
+      }
+    },
+    "assets/img/web/optimized-pacs-1200-1200-adc16ef82c.jpg": {
+      "source": "assets/img/optimized/pacs-1200.jpg",
+      "width": 1200,
+      "height": 900,
+      "bytes": 155673,
+      "options": {
+        "width": 1200,
+        "quality": 80,
+        "format": "jpg"
+      }
+    },
+    "assets/img/web/optimized-pacs-1200-480-ac5b521609.webp": {
+      "source": "assets/img/optimized/pacs-1200.jpg",
+      "width": 480,
+      "height": 360,
+      "bytes": 31084,
+      "options": {
+        "width": 480,
+        "quality": 80
+      }
+    },
+    "assets/img/web/optimized-pacs-1200-720-43dd996ad9.webp": {
+      "source": "assets/img/optimized/pacs-1200.jpg",
+      "width": 720,
+      "height": 540,
+      "bytes": 59090,
+      "options": {
+        "width": 720,
+        "quality": 80
+      }
+    },
+    "assets/img/web/optimized-spring-theoretical-chemists-2026-1-360-9308c2b8f6.webp": {
+      "source": "assets/img/optimized/spring-theoretical-chemists-2026-1.jpg",
+      "width": 360,
+      "height": 270,
+      "bytes": 19480,
+      "options": {
+        "width": 360,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-spring-theoretical-chemists-2026-1-720-6615bce0b2.webp": {
+      "source": "assets/img/optimized/spring-theoretical-chemists-2026-1.jpg",
+      "width": 720,
+      "height": 540,
+      "bytes": 66374,
+      "options": {
+        "width": 720,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-spring-theoretical-chemists-2026-1-960-805eeac1c7.webp": {
+      "source": "assets/img/optimized/spring-theoretical-chemists-2026-1.jpg",
+      "width": 960,
+      "height": 720,
+      "bytes": 106038,
+      "options": {
+        "width": 960,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-spring-theoretical-chemists-2026-2-360-43f73d4fee.webp": {
+      "source": "assets/img/optimized/spring-theoretical-chemists-2026-2.jpg",
+      "width": 360,
+      "height": 270,
+      "bytes": 22532,
+      "options": {
+        "width": 360,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-spring-theoretical-chemists-2026-2-720-5371273e12.webp": {
+      "source": "assets/img/optimized/spring-theoretical-chemists-2026-2.jpg",
+      "width": 720,
+      "height": 540,
+      "bytes": 73972,
+      "options": {
+        "width": 720,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-spring-theoretical-chemists-2026-2-960-f7cac12cf9.webp": {
+      "source": "assets/img/optimized/spring-theoretical-chemists-2026-2.jpg",
+      "width": 960,
+      "height": 720,
+      "bytes": 115464,
+      "options": {
+        "width": 960,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-spring-theoretical-chemists-2026-3-360-02f5f6695a.webp": {
+      "source": "assets/img/optimized/spring-theoretical-chemists-2026-3.jpg",
+      "width": 360,
+      "height": 270,
+      "bytes": 11882,
+      "options": {
+        "width": 360,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-spring-theoretical-chemists-2026-3-720-ef38213421.webp": {
+      "source": "assets/img/optimized/spring-theoretical-chemists-2026-3.jpg",
+      "width": 720,
+      "height": 540,
+      "bytes": 27876,
+      "options": {
+        "width": 720,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-spring-theoretical-chemists-2026-3-960-e442571cba.webp": {
+      "source": "assets/img/optimized/spring-theoretical-chemists-2026-3.jpg",
+      "width": 960,
+      "height": 720,
+      "bytes": 38900,
+      "options": {
+        "width": 960,
+        "quality": 76
+      }
+    },
+    "assets/img/web/optimized-sri-700-224-c8805fe102.webp": {
+      "source": "assets/img/optimized/sri-700.jpg",
+      "width": 224,
+      "height": 209,
+      "bytes": 3698,
+      "options": {
+        "width": 224,
+        "quality": 82
+      }
+    },
+    "assets/img/web/optimized-sri-700-336-da5da8f758.webp": {
+      "source": "assets/img/optimized/sri-700.jpg",
+      "width": 336,
+      "height": 314,
+      "bytes": 6234,
+      "options": {
+        "width": 336,
+        "quality": 82
+      }
+    },
+    "assets/img/web/optimized-tanya-700-224-77f8514147.webp": {
+      "source": "assets/img/optimized/tanya-700.jpg",
+      "width": 224,
+      "height": 399,
+      "bytes": 15718,
+      "options": {
+        "width": 224,
+        "quality": 82
+      }
+    },
+    "assets/img/web/optimized-tanya-700-336-5f5beba9e0.webp": {
+      "source": "assets/img/optimized/tanya-700.jpg",
+      "width": 336,
+      "height": 598,
+      "bytes": 29840,
+      "options": {
+        "width": 336,
+        "quality": 82
+      }
+    },
+    "assets/img/web/prince-224-4a4f3fe201.webp": {
+      "source": "assets/img/prince.png",
+      "width": 224,
+      "height": 337,
+      "bytes": 5696,
+      "options": {
+        "width": 224,
+        "quality": 82
+      }
+    },
+    "assets/img/web/prince-336-881cead128.webp": {
+      "source": "assets/img/prince.png",
+      "width": 336,
+      "height": 505,
+      "bytes": 9446,
+      "options": {
+        "width": 336,
+        "quality": 82
+      }
+    },
+    "assets/img/web/prince-acs-fall-chicago-480-c6404f55f1.webp": {
+      "source": "assets/img/prince-acs-fall-chicago.jpg",
+      "width": 480,
+      "height": 640,
+      "bytes": 33420,
+      "options": {
+        "width": 480,
+        "quality": 80
+      }
+    },
+    "assets/img/web/prince-acs-fall-chicago-720-6a498dfc6f.webp": {
+      "source": "assets/img/prince-acs-fall-chicago.jpg",
+      "width": 720,
+      "height": 960,
+      "bytes": 64348,
+      "options": {
+        "width": 720,
+        "quality": 80
+      }
+    },
+    "assets/img/web/publications-biexcited-states-560-d342bd923b.webp": {
+      "source": "assets/img/publications/biexcited-states.webp",
+      "width": 560,
+      "height": 420,
+      "bytes": 30488,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-chemically-decisive-benchmarks-1200-02807225ca.jpg": {
+      "source": "assets/img/publications/chemically-decisive-benchmarks.png",
+      "width": 960,
+      "height": 540,
+      "bytes": 38256,
+      "options": {
+        "width": 1200,
+        "quality": 80,
+        "format": "jpg"
+      }
+    },
+    "assets/img/web/publications-chemically-decisive-benchmarks-560-6816543f7e.webp": {
+      "source": "assets/img/publications/chemically-decisive-benchmarks.png",
+      "width": 560,
+      "height": 315,
+      "bytes": 16076,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-cvqe-workflow-560-5124f6fe22.webp": {
+      "source": "assets/img/publications/cvqe-workflow.webp",
+      "width": 560,
+      "height": 420,
+      "bytes": 16950,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-generalized-eigenvalue-1200-04601ba212.jpg": {
+      "source": "assets/img/publications/generalized-eigenvalue.jpeg",
+      "width": 1200,
+      "height": 628,
+      "bytes": 43182,
+      "options": {
+        "width": 1200,
+        "quality": 80,
+        "format": "jpg"
+      }
+    },
+    "assets/img/web/publications-generalized-eigenvalue-480-a6c6d57695.webp": {
+      "source": "assets/img/publications/generalized-eigenvalue.jpeg",
+      "width": 480,
+      "height": 251,
+      "bytes": 10874,
+      "options": {
+        "width": 480,
+        "quality": 86
+      }
+    },
+    "assets/img/web/publications-generalized-eigenvalue-560-6e5605bfb4.webp": {
+      "source": "assets/img/publications/generalized-eigenvalue.jpeg",
+      "width": 560,
+      "height": 293,
+      "bytes": 14678,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-generalized-eigenvalue-960-f05895189f.webp": {
+      "source": "assets/img/publications/generalized-eigenvalue.jpeg",
+      "width": 960,
+      "height": 502,
+      "bytes": 25880,
+      "options": {
+        "width": 960,
+        "quality": 86
+      }
+    },
+    "assets/img/web/publications-leakage-paths-560-3dc706f468.webp": {
+      "source": "assets/img/publications/leakage-paths.webp",
+      "width": 560,
+      "height": 420,
+      "bytes": 9946,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-post-optimization-subspace-560-be6be76723.webp": {
+      "source": "assets/img/publications/post-optimization-subspace.webp",
+      "width": 560,
+      "height": 420,
+      "bytes": 24098,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-qsc-eom-hardware-560-a8816b8466.webp": {
+      "source": "assets/img/publications/qsc-eom-hardware.webp",
+      "width": 560,
+      "height": 420,
+      "bytes": 14512,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-qseom-ga-560-b28b1d0b43.webp": {
+      "source": "assets/img/publications/qseom-ga.gif",
+      "width": 378,
+      "height": 168,
+      "bytes": 7740,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-quantum-krylov-1200-3612358bbb.jpg": {
+      "source": "assets/img/publications/quantum-krylov.png",
+      "width": 1080,
+      "height": 1014,
+      "bytes": 128768,
+      "options": {
+        "width": 1200,
+        "quality": 80,
+        "format": "jpg"
+      }
+    },
+    "assets/img/web/publications-quantum-krylov-convergence-560-4deda14874.webp": {
+      "source": "assets/img/publications/quantum-krylov-convergence.webp",
+      "width": 560,
+      "height": 420,
+      "bytes": 25250,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-response-spectra-560-22b9fe3815.webp": {
+      "source": "assets/img/publications/response-spectra.webp",
+      "width": 560,
+      "height": 420,
+      "bytes": 12484,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-tepid-adapt-560-ba2b3a3eee.webp": {
+      "source": "assets/img/publications/tepid-adapt.webp",
+      "width": 560,
+      "height": 420,
+      "bytes": 21742,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-transcorrelated-orbitals-560-5294ff737d.webp": {
+      "source": "assets/img/publications/transcorrelated-orbitals.webp",
+      "width": 560,
+      "height": 420,
+      "bytes": 5760,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/publications-uranium-spectrum-560-72586d9d1d.webp": {
+      "source": "assets/img/publications/uranium-spectrum.webp",
+      "width": 560,
+      "height": 420,
+      "bytes": 12130,
+      "options": {
+        "width": 560,
+        "quality": 90
+      }
+    },
+    "assets/img/web/research-benzene-pillar-cartoon-280-5583c7e529.webp": {
+      "source": "assets/img/research/benzene-pillar-cartoon.png",
+      "width": 280,
+      "height": 280,
+      "bytes": 15472,
+      "options": {
+        "width": 280,
+        "quality": 88
+      }
+    },
+    "assets/img/web/research-femoco-career-720-1b87a65345.webp": {
+      "source": "assets/img/research/femoco-career.png",
+      "width": 720,
+      "height": 665,
+      "bytes": 27080,
+      "options": {
+        "width": 720,
+        "quality": 90
+      }
+    },
+    "assets/img/web/research-heavy-element-orbitals-no-title-720-7f4561cbac.webp": {
+      "source": "assets/img/research/heavy-element-orbitals-no-title.jpg",
+      "width": 720,
+      "height": 468,
+      "bytes": 26696,
+      "options": {
+        "width": 720,
+        "quality": 90
+      }
+    },
+    "assets/img/web/research-photoisomerism-martinez-no-title-720-487817d552.webp": {
+      "source": "assets/img/research-photoisomerism-martinez-no-title.png",
+      "width": 480,
+      "height": 390,
+      "bytes": 15996,
+      "options": {
+        "width": 720,
+        "quality": 90
+      }
+    },
+    "assets/img/web/research-quantum-computer-pillar-cartoon-280-bb5c6975f8.webp": {
+      "source": "assets/img/research/quantum-computer-pillar-cartoon.png",
+      "width": 280,
+      "height": 280,
+      "bytes": 25076,
+      "options": {
+        "width": 280,
+        "quality": 88
+      }
+    },
+    "assets/img/web/Sonal-224-fb4d81b3e7.webp": {
+      "source": "assets/img/Sonal.jpeg",
+      "width": 224,
+      "height": 206,
+      "bytes": 5998,
+      "options": {
+        "width": 224,
+        "quality": 82
+      }
+    },
+    "assets/img/web/Sonal-336-911511ff47.webp": {
+      "source": "assets/img/Sonal.jpeg",
+      "width": 336,
+      "height": 309,
+      "bytes": 9334,
+      "options": {
+        "width": 336,
+        "quality": 82
+      }
+    }
+  },
+  "audit": {
+    "beforeBytes": 10841090,
+    "afterBytes": 1536555,
+    "pages": {
+      "404.html": {
+        "beforeBytes": 699919,
+        "afterBytes": 24468
+      },
+      "culture.html": {
+        "beforeBytes": 4737135,
+        "afterBytes": 734154
+      },
+      "funding.html": {
+        "beforeBytes": 1035603,
+        "afterBytes": 45840
+      },
+      "index.html": {
+        "beforeBytes": 699919,
+        "afterBytes": 111366
+      },
+      "join.html": {
+        "beforeBytes": 699919,
+        "afterBytes": 111366
+      },
+      "legal.html": {
+        "beforeBytes": 699919,
+        "afterBytes": 24468
+      },
+      "news.html": {
+        "beforeBytes": 1866950,
+        "afterBytes": 124448
+      },
+      "opportunities.html": {
+        "beforeBytes": 0,
+        "afterBytes": 0
+      },
+      "outputs.html": {
+        "beforeBytes": 2986676,
+        "afterBytes": 178944
+      },
+      "people.html": {
+        "beforeBytes": 1333246,
+        "afterBytes": 128408
+      },
+      "publications.html": {
+        "beforeBytes": 1455483,
+        "afterBytes": 249883
+      },
+      "research.html": {
+        "beforeBytes": 1741800,
+        "afterBytes": 134788
+      },
+      "software.html": {
+        "beforeBytes": 699919,
+        "afterBytes": 24468
+      }
+    }
+  }
+}

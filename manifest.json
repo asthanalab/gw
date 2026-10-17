@@ -9,8 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "./assets/img/logoUND.jpeg",
-      "type": "image/jpeg",
+      "src": "./assets/img/web/logoUND-192-fabc4a8657.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./assets/img/web/logoUND-512-8462274bc6.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ]

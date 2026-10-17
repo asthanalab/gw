@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v100';
+const staticCacheName = 'site-static-v101';
 const assets = [
     './',
     './index.html',
@@ -19,20 +19,20 @@ const assets = [
     './sitemap.xml',
     './style.css',
     './pages.css',
-    './pages.css?v=20260914-2',
+    './pages.css?v=20261016-images',
     './research.css',
     './research.css?v=20260913-4',
     './assets/js/app.js',
-    './assets/js/app.js?v=100',
+    './assets/js/app.js?v=101',
     './assets/js/news.js',
-    './assets/img/logoUND.jpeg'
+    './assets/img/web/logoUND-64-afec0f0829.png'
 ];
 // install event
 self.addEventListener('install', evt => {
     evt.waitUntil(
         caches.open(staticCacheName).then((cache) => {
             console.log('caching shell assets');
-            cache.addAll(assets);
+            return cache.addAll(assets);
         })
     );
     self.skipWaiting();
