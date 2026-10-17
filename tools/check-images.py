@@ -76,7 +76,7 @@ for file in sorted(ROOT.glob('*.html')):
     for match in re.finditer(r'(?:src|href|content)="((?:https://theasthanagroup.com/)?assets/[^"?]+)(?:\?[^"#]*)?"', current_text):
         assert (ROOT / local(match[1])).exists(), f'Missing local asset: {file.name}: {match[1]}'
     if 'pages.css' in current_text:
-        assert 'pages.css?v=20261016-images' in current_text
+        assert 'pages.css?v=20261016-responsive-images' in current_text
         assert 'assets/js/app.js?v=101' in current_text
 
 for output, info in ASSETS.items():
@@ -103,6 +103,17 @@ assert 'sw.js?v=101' in (ROOT / 'assets/js/app.js').read_text()
 assert 'return cache.addAll(assets)' in (ROOT / 'sw.js').read_text()
 home = Page((ROOT / 'index.html').read_text()).images[0]
 assert home['loading'] == 'eager' and home['fetchpriority'] == 'high'
+css = (ROOT / 'pages.css').read_text()
+responsive_default = re.search(r'^img\s*\{([^}]+)\}', css, re.MULTILINE)
+assert responsive_default and re.search(r'height:\s*auto\s*;', responsive_default[1]), 'Intrinsic height must not lock responsive image height'
+assert re.search(r'\.site-page \.culture-hero-image\s*\{\s*min-height:\s*0\s*;', css), 'Small-screen group photo must not be cropped by a minimum height'
+assert re.search(r'\.join-hero img\s*\{\s*height:\s*auto;\s*min-height:\s*0;', css), 'Small-screen join photo must scale proportionally'
+for viewport in (320, 375, 390, 480, 768):
+    width = min(420, viewport - 40)
+    proportional_height = width * int(home['height']) / int(home['width'])
+    assert proportional_height == width * .75
+    assert proportional_height < int(home['height'])
+print('PASS: responsive-height safeguards and 4:3 group-photo proportions at 320/375/390/480/768px.')
 for image in Page((ROOT / 'culture.html').read_text()).images[1:]:
     assert image['loading'] == 'lazy'
 

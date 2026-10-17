@@ -8,7 +8,7 @@ const sharp = require('sharp');
 const root = path.resolve(__dirname, '..');
 const generated = 'assets/img/web';
 const manifestPath = path.join(root, generated, 'manifest.json');
-const stylesheetVersion = '20261016-images';
+const stylesheetVersion = '20261016-responsive-images';
 const htmlFiles = fs.readdirSync(root).filter((name) => name.endsWith('.html')).sort();
 const originals = new Map(htmlFiles.map((name) => [name, fs.readFileSync(path.join(root, name), 'utf8')]));
 const oldCss = fs.readFileSync(path.join(root, 'pages.css'), 'utf8');

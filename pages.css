@@ -21,6 +21,12 @@ html {
     background: var(--page-bg);
 }
 
+/* Intrinsic width/height attributes reserve space, but must not fix image height
+   when a responsive layout reduces the width. Component photo frames override this. */
+img {
+    height: auto;
+}
+
 body.site-shell {
     margin: 0;
     min-height: 100vh;
@@ -1933,7 +1939,8 @@ body.site-shell a:hover {
     }
 
     .join-hero img {
-        min-height: 220px;
+        height: auto;
+        min-height: 0;
     }
 
     .menu-wrap {
@@ -2156,7 +2163,7 @@ body.site-shell a:hover {
     }
 
     .site-page .culture-hero-image {
-        min-height: 240px;
+        min-height: 0;
     }
 
     .site-footer {

@@ -19,7 +19,7 @@ const assets = [
     './sitemap.xml',
     './style.css',
     './pages.css',
-    './pages.css?v=20261016-images',
+    './pages.css?v=20261016-responsive-images',
     './research.css',
     './research.css?v=20260913-4',
     './assets/js/app.js',
