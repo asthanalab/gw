@@ -2240,6 +2240,17 @@ body.site-shell a:hover {
     font-size: 0.9rem;
 }
 
+.publications-software-link {
+    min-height: 44px;
+    margin: 18px 0 10px;
+    border: 1px solid var(--page-border-strong);
+    font-size: 1rem;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+    box-shadow: none;
+}
+
 .publication-authors sup,
 .publication-corresponding-note sup {
     font-size: 0.8em;
